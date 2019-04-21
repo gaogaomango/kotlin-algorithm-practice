@@ -1,4 +1,4 @@
-object NumbersExtentions {
+object NumbersExtensions {
     fun findMedianSortedArrays(nums1: IntArray, nums2: IntArray): Double {
         val sortedNums = nums1.plus(nums2).sorted()
         val mid = sortedNums.size / 2
