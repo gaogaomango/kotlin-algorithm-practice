@@ -28,5 +28,11 @@ class StringExtensionsTest {
         assertEquals("bb", StringExtensions.longestPalindrome("cbbd"))
     }
 
+    @Test
+    fun test_zigzagConversion_pattern() {
+        assertEquals("PAHNAPLSIIGYIR", StringExtensions.zigzagConversion("PAYPALISHIRING", 3))
+        assertEquals("PINALSIGYAHRPI", StringExtensions.zigzagConversion("PAYPALISHIRING", 4))
+        assertEquals("AB", StringExtensions.zigzagConversion("AB", 1))
+    }
 
 }

@@ -54,4 +54,25 @@ object StringExtensions {
         return sharped.slice(2*mx-ends[mx]+1 until ends[mx])
             .filter{ it != '#'}.joinToString("")
     }
+
+    fun zigzagConversion(s: String, numRows: Int): String {
+        if(s.length <= 1 || s.length <= numRows || numRows == 1) return s
+        val chars = CharArray(s.length)
+        var k = 0
+        for(i in 0 until numRows) {
+            if(i == 0 || i == numRows -1) {
+                for ( j in i until s.length step 2 * (numRows - 1)) {
+                    chars[k++] = s[j]
+                }
+                continue
+            }
+            chars[k++] = s[i]
+            for ( j in 2 * (numRows - 1) -i until s.length step 2 * (numRows - 1)) {
+                chars[k++] = s[j]
+                if(j + 2 * i < s.length) chars[k++] = s[j + 2 * i]
+            }
+        }
+
+        return chars.joinToString("")
+    }
 }
