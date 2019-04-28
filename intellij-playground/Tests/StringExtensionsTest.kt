@@ -35,4 +35,18 @@ class StringExtensionsTest {
         assertEquals("AB", StringExtensions.zigzagConversion("AB", 1))
     }
 
+    @Test
+    fun test_reverseInt() {
+        assertEquals(321, NumbersExtensions.reverseInt(123))
+        assertEquals(-321, NumbersExtensions.reverseInt(-123))
+        assertEquals(21, NumbersExtensions.reverseInt(120))
+    }
+
+    @Test
+    fun test_reverseInt2() {
+        assertEquals(321, NumbersExtensions.reverseInt2(123))
+        assertEquals(-321, NumbersExtensions.reverseInt2(-123))
+        assertEquals(21, NumbersExtensions.reverseInt2(120))
+    }
+
 }
