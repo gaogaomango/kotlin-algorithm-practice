@@ -1,3 +1,5 @@
+import java.math.BigInteger
+
 object StringExtensions {
     fun lengthOfLongestSubstring(s: String): Int {
         if(s.length <= 1) return s.length
@@ -75,4 +77,83 @@ object StringExtensions {
 
         return chars.joinToString("")
     }
+
+    fun myAtoi(str: String): Int {
+        if(str.isNullOrEmpty()) return 0
+        val start = str.subSequence(findStart(str), str.length).toString()
+        val subStr = start.subSequence(0, findEnd(start)).toString()
+
+        val bigVal = if (subStr.isNotEmpty() && subStr != "-" && subStr != "+") BigInteger(subStr) else BigInteger("0")
+
+        if(bigVal > BigInteger(Integer.MAX_VALUE.toString())) return Integer.MAX_VALUE
+        if(bigVal < BigInteger(Integer.MIN_VALUE.toString())) return Integer.MIN_VALUE
+        return bigVal.toInt()
+    }
+
+    private fun findStart(str: String): Int {
+        var i = 0
+        while(i < str.length) {
+            if(!str[i].isWhitespace() || str[i] == '-' || str[i] == '+') return i
+            i++
+        }
+        return str.length
+    }
+
+    private fun findEnd(str: String): Int {
+        str.forEachIndexed { index, c ->
+            if(!c.isDigit() && !((c == '-' || c == '+') && index == 0)) return index
+        }
+        return str.length
+    }
+
+    fun myAtoi2(str: String): Int {
+        if(str.isNullOrEmpty()) return 0
+
+        var isPlus = true
+        var isFoundFirstNumber = false
+
+        var startIndex = 0
+        var endIndex = 0
+
+        for(i in 0 until str.length) {
+            val currentChar = str[i]
+            if(isFoundFirstNumber) {
+                if(currentChar.isDigit()) {
+                    endIndex = i
+                    isFoundFirstNumber = true
+                } else if('.' == currentChar) {
+                    break
+                } else if(' ' == currentChar) {
+                    break
+                } else {
+                    break
+                }
+            } else {
+                if (currentChar.isDigit() || '+' == currentChar || '-' == currentChar) {
+                    if ('-' == currentChar) {
+                        isPlus = false
+                    }
+                    startIndex = i
+                    endIndex = i
+                    isFoundFirstNumber = true
+                } else if (' ' == currentChar) {
+                    continue
+                } else {
+                    return 0
+                }
+            }
+        }
+        if(!isFoundFirstNumber) {
+            return 0
+        }
+
+        val resultStr = str.substring(startIndex, endIndex + 1)
+        if(resultStr.length == 1 && ("-" == resultStr || "+" == resultStr)) return 0
+        try {
+            return Integer.parseInt(resultStr)
+        } catch (e: NumberFormatException) {
+            if(isPlus) return Integer.MAX_VALUE else return Integer.MIN_VALUE
+        }
+    }
+
 }
