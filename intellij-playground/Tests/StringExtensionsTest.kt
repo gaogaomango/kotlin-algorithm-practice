@@ -49,4 +49,20 @@ class StringExtensionsTest {
         assertEquals(21, NumbersExtensions.reverseInt2(120))
     }
 
+    @Test
+    fun myAtoi_test() {
+        assertEquals(42, StringExtensions.myAtoi("42"))
+        assertEquals(4193, StringExtensions.myAtoi("4193 with words"))
+        assertEquals(0, StringExtensions.myAtoi("words and 987"))
+        assertEquals(-2147483648, StringExtensions.myAtoi("-91283472332"))
+    }
+
+    @Test
+    fun myAtoi_test2() {
+        assertEquals(42, StringExtensions.myAtoi2("42"))
+        assertEquals(4193, StringExtensions.myAtoi2("4193 with words"))
+        assertEquals(0, StringExtensions.myAtoi2("words and 987"))
+        assertEquals(-2147483648, StringExtensions.myAtoi2("-91283472332"))
+    }
+
 }
