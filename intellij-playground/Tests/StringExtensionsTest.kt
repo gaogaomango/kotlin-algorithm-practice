@@ -65,4 +65,11 @@ class StringExtensionsTest {
         assertEquals(-2147483648, StringExtensions.myAtoi2("-91283472332"))
     }
 
+    @Test
+    fun isPalindrome_test() {
+        assertEquals(true, NumbersExtensions.isPalindrome(121))
+        assertEquals(false, NumbersExtensions.isPalindrome(-121))
+        assertEquals(false, NumbersExtensions.isPalindrome(10))
+    }
+
 }

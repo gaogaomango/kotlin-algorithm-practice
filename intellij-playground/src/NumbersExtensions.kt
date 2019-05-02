@@ -41,4 +41,21 @@ object NumbersExtensions {
         val rs = Math.abs(x).toString().reversed()
         return (rs.toIntOrNull() ?: 0) * if (x < 0) -1 else 1
     }
+
+    fun isPalindrome(x: Int): Boolean {
+        val xStr = x.toString()
+        val len = xStr.length
+
+        if(len % 2 == 0) {
+            for(i in 0 until len / 2) {
+                if(xStr[i] == xStr[len - 1 - i]) continue else return false
+            }
+        } else {
+            for(i in 0 until len / 2 + 1) {
+                if(xStr[i] == xStr[len - 1 - i]) continue else return false
+            }
+        }
+
+        return true
+    }
 }
