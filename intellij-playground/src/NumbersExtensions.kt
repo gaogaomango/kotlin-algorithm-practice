@@ -58,4 +58,9 @@ object NumbersExtensions {
 
         return true
     }
+
+    fun isPalindrome2(x: Int): Boolean {
+        val xStr = x.toString()
+       return xStr == xStr.reversed()
+    }
 }

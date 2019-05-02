@@ -72,4 +72,11 @@ class StringExtensionsTest {
         assertEquals(false, NumbersExtensions.isPalindrome(10))
     }
 
+    @Test
+    fun isPalindrome2_test() {
+        assertEquals(true, NumbersExtensions.isPalindrome2(121))
+        assertEquals(false, NumbersExtensions.isPalindrome2(-121))
+        assertEquals(false, NumbersExtensions.isPalindrome2(10))
+    }
+
 }
