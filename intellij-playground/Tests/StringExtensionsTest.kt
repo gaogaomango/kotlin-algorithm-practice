@@ -36,20 +36,6 @@ class StringExtensionsTest {
     }
 
     @Test
-    fun test_reverseInt() {
-        assertEquals(321, NumbersExtensions.reverseInt(123))
-        assertEquals(-321, NumbersExtensions.reverseInt(-123))
-        assertEquals(21, NumbersExtensions.reverseInt(120))
-    }
-
-    @Test
-    fun test_reverseInt2() {
-        assertEquals(321, NumbersExtensions.reverseInt2(123))
-        assertEquals(-321, NumbersExtensions.reverseInt2(-123))
-        assertEquals(21, NumbersExtensions.reverseInt2(120))
-    }
-
-    @Test
     fun myAtoi_test() {
         assertEquals(42, StringExtensions.myAtoi("42"))
         assertEquals(4193, StringExtensions.myAtoi("4193 with words"))
@@ -66,17 +52,13 @@ class StringExtensionsTest {
     }
 
     @Test
-    fun isPalindrome_test() {
-        assertEquals(true, NumbersExtensions.isPalindrome(121))
-        assertEquals(false, NumbersExtensions.isPalindrome(-121))
-        assertEquals(false, NumbersExtensions.isPalindrome(10))
-    }
-
-    @Test
-    fun isPalindrome2_test() {
-        assertEquals(true, NumbersExtensions.isPalindrome2(121))
-        assertEquals(false, NumbersExtensions.isPalindrome2(-121))
-        assertEquals(false, NumbersExtensions.isPalindrome2(10))
+    fun isMatch_OK() {
+        assertEquals(false, StringExtensions.isMatch("aa", "a"))
+        assertEquals(true, StringExtensions.isMatch("aa", "a*"))
+        assertEquals(true, StringExtensions.isMatch("ab", ".*"))
+        assertEquals(true, StringExtensions.isMatch("aab", "c*a*b"))
+        assertEquals(false, StringExtensions.isMatch("mississippi", "mis*is*p*."))
+        assertEquals(true, StringExtensions.isMatch("", ".*"))
     }
 
 }

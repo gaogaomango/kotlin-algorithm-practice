@@ -63,4 +63,48 @@ object NumbersExtensions {
         val xStr = x.toString()
        return xStr == xStr.reversed()
     }
+
+    fun maxArea(height: IntArray): Int {
+        if(height.isEmpty()) return 0
+        if(height == null) return 0
+
+        var result = 0
+        var tmpResult = 0
+        var leftPos = 0
+        var rightPos = height.size - 1
+        var leftHeight = 0
+        var rightHeight = 0
+
+        while(leftPos < rightPos) {
+            leftHeight = height[leftPos]
+            rightHeight = height[rightPos]
+
+            if(leftHeight >= rightHeight) {
+                tmpResult = (rightPos - leftPos) * rightHeight
+                rightPos--
+            } else {
+                tmpResult = (rightPos - leftPos) * leftHeight
+                leftPos++
+            }
+            result = if(tmpResult > result) tmpResult else result
+        }
+
+        return result
+    }
+
+    fun maxArea2(height: IntArray): Int {
+        if(height.isEmpty()) return 0
+        if(height == null) return 0
+
+        var leftPos = 0
+        var rightPos = height.size - 1
+        var result = 0
+
+        while(leftPos < rightPos) {
+            result = Math.max(result, (rightPos - leftPos) * Math.min(height[leftPos], height[rightPos]))
+            if(height[leftPos] < height[rightPos]) leftPos++ else rightPos--
+        }
+
+        return result
+    }
 }

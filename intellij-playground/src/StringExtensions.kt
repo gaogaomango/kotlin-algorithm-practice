@@ -156,4 +156,13 @@ object StringExtensions {
         }
     }
 
+    fun isMatch(s: String, p: String): Boolean {
+        if(s == null || p == null) return false
+        if(p.isEmpty()) return if (s.isEmpty()) s == p else false
+        if(s.isNotEmpty() && !Regex("^[a-z]+$").matches(s)) return false
+        if(!Regex("^([a-z]|\\*|\\.)+$").matches(p)) return false
+
+        return Regex("^$p\$").matches(s)
+    }
+
 }
