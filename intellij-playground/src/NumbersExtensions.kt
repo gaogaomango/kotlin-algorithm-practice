@@ -1,3 +1,5 @@
+import java.lang.StringBuilder
+
 object NumbersExtensions {
     fun findMedianSortedArrays(nums1: IntArray, nums2: IntArray): Double {
         val sortedNums = nums1.plus(nums2).sorted()
@@ -106,5 +108,45 @@ object NumbersExtensions {
         }
 
         return result
+    }
+
+    fun intToRoman(num: Int): String {
+        when(num) {
+            !in 1 .. 3999 -> return ""
+        }
+        val sb = StringBuilder()
+        var tmpNum = num
+
+        tmpNum = addRoman(sb, tmpNum, 1000, "M")
+        tmpNum = addRoman(sb, tmpNum, 500, "D")
+        tmpNum = addRoman(sb, tmpNum, 100, "C")
+        tmpNum = addRoman(sb, tmpNum, 50, "L")
+        tmpNum = addRoman(sb, tmpNum, 10, "X")
+        tmpNum = addRoman(sb, tmpNum, 5, "V")
+        tmpNum = addRoman(sb, tmpNum, 1, "I")
+
+        var result = sb.toString()
+
+        result = result.replace("CCCCCCCCC".toRegex(), "CM")
+        result = result.replace("DCCCC".toRegex(), "CM")
+        result = result.replace("CCCC".toRegex(), "CD")
+        result = result.replace("XXXXXXXXX".toRegex(), "XC")
+        result = result.replace("LXXXX".toRegex(), "XC")
+        result = result.replace("XXXX".toRegex(), "XL")
+        result = result.replace("IIIIIIIII".toRegex(), "IX")
+        result = result.replace("VIIII".toRegex(), "IX")
+        result = result.replace("IIII".toRegex(), "IV")
+
+        return result
+    }
+
+    private fun addRoman(sb: StringBuilder, num: Int, devideNumber: Int, addLetter: String): Int {
+        if(num >= devideNumber) {
+            var tmpCount = num / devideNumber
+            for (i in 0 until tmpCount) {
+                sb.append(addLetter)
+            }
+        }
+        return num % devideNumber
     }
 }

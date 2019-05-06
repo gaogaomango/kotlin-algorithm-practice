@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d048457c-d89b-4d7e-8ae5-5ca6cf0baf73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/Tests/NumbersExtensionsTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/NumbersExtensionsTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/StringExtensionsTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/StringExtensionsTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/NumbersExtensions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/NumbersExtensions.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StringExtensions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringExtensions.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +22,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/StringExtensions.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="348">
-                  <caret line="163" selection-start-line="159" selection-end-line="163" />
+                <state relative-caret-position="402">
+                  <caret line="162" column="19" selection-start-line="162" selection-start-column="19" selection-end-line="162" selection-end-column="19" />
                 </state>
               </provider>
             </entry>
@@ -61,20 +59,34 @@
             <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/common/kotlin/text/Strings.kt">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="187">
-                  <caret line="233" column="31" selection-start-line="233" selection-start-column="31" selection-end-line="233" selection-end-column="31" />
+                  <caret line="691" column="31" selection-start-line="691" selection-start-column="31" selection-end-line="691" selection-end-column="31" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/math/BigInteger.java">
+            <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/kotlin/text/regex/Regex.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="80">
-                  <caret line="593" column="70" selection-start-line="593" selection-start-column="70" selection-end-line="593" selection-end-column="70" />
-                  <folding>
-                    <element signature="e#22896#22897#0" expanded="true" />
-                    <element signature="e#22925#22926#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="195">
+                  <caret line="142" column="112" selection-start-line="142" selection-start-column="112" selection-end-line="142" selection-end-column="112" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/regex/Matcher.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="195">
+                  <caret line="948" column="18" selection-start-line="948" selection-start-column="18" selection-end-line="948" selection-end-column="18" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/regex/Pattern.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="195">
+                  <caret line="1085" column="19" selection-start-line="1085" selection-start-column="19" selection-end-line="1085" selection-end-column="19" />
                 </state>
               </provider>
             </entry>
@@ -82,17 +94,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/kotlin/text/StringsJVM.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="356" column="31" selection-start-line="356" selection-start-column="31" selection-end-line="356" selection-end-column="31" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/String.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="315">
-                  <caret line="1963" column="9" lean-forward="true" selection-start-line="1963" selection-start-column="9" selection-end-line="1963" selection-end-column="9" />
+                <state relative-caret-position="20">
+                  <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
                 </state>
               </provider>
             </entry>
@@ -100,8 +103,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/NumbersExtensions.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
-                  <caret line="106" selection-start-line="106" selection-end-line="106" />
+                <state relative-caret-position="768">
+                  <caret line="150" column="5" lean-forward="true" selection-start-line="142" selection-end-line="150" selection-end-column="5" />
                 </state>
               </provider>
             </entry>
@@ -134,8 +137,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Tests/NumbersExtensionsTest.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="468">
-                  <caret line="58" selection-start-line="58" selection-end-line="58" />
+                <state relative-caret-position="388">
+                  <caret line="68" column="23" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
                   <folding>
                     <element signature="e#0#95#0" expanded="true" />
                   </folding>
@@ -258,7 +261,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.NumbersExtensionsTest.maxArea2_test">
+  <component name="RunManager" selected="JUnit.NumbersExtensionsTest.intToRoman_test">
+    <configuration name="NumbersExtensionsTest.intToRoman_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="intellij-playground" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="NumbersExtensionsTest" />
+      <option name="METHOD_NAME" value="intToRoman_test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="NumbersExtensionsTest.maxArea2_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="intellij-playground" />
       <option name="PACKAGE_NAME" value="" />
@@ -299,23 +312,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringExtensionsTest.isPalindrome_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="intellij-playground" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StringExtensionsTest" />
-      <option name="METHOD_NAME" value="isPalindrome_test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.NumbersExtensionsTest.intToRoman_test" />
         <item itemvalue="JUnit.NumbersExtensionsTest.maxArea2_test" />
         <item itemvalue="JUnit.NumbersExtensionsTest.maxArea_test" />
         <item itemvalue="JUnit.StringExtensionsTest.isMatch_OK" />
         <item itemvalue="JUnit.StringExtensionsTest.isPalindrome2_test" />
-        <item itemvalue="JUnit.StringExtensionsTest.isPalindrome_test" />
       </list>
     </recent_temporary>
   </component>
@@ -333,21 +336,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StringExtensionsTest_isMatch_OK - 2019.05.03 at 13h 43m 45s.xml">
-      <configuration name="StringExtensionsTest.isMatch_OK" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StringExtensionsTest_isMatch_OK - 2019.05.03 at 13h 44m 25s.xml">
-      <configuration name="StringExtensionsTest.isMatch_OK" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StringExtensionsTest_isMatch_OK - 2019.05.03 at 13h 44m 54s.xml">
-      <configuration name="StringExtensionsTest.isMatch_OK" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StringExtensionsTest_isMatch_OK - 2019.05.03 at 13h 45m 46s.xml">
-      <configuration name="StringExtensionsTest.isMatch_OK" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StringExtensionsTest_isMatch_OK - 2019.05.03 at 13h 46m 06s.xml">
-      <configuration name="StringExtensionsTest.isMatch_OK" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="StringExtensionsTest_isMatch_OK - 2019.05.03 at 13h 46m 38s.xml">
       <configuration name="StringExtensionsTest.isMatch_OK" configurationId="JUnit" />
     </history-entry>
@@ -362,6 +350,21 @@
     </history-entry>
     <history-entry file="NumbersExtensionsTest_maxArea_test - 2019.05.06 at 01h 03m 04s.xml">
       <configuration name="NumbersExtensionsTest.maxArea_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NumbersExtensionsTest_maxArea2_test - 2019.05.06 at 01h 07m 11s.xml">
+      <configuration name="NumbersExtensionsTest.maxArea2_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NumbersExtensionsTest_intToRoman_test - 2019.05.06 at 14h 51m 15s.xml">
+      <configuration name="NumbersExtensionsTest.intToRoman_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NumbersExtensionsTest_intToRoman_test - 2019.05.06 at 14h 54m 03s.xml">
+      <configuration name="NumbersExtensionsTest.intToRoman_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NumbersExtensionsTest_intToRoman_test - 2019.05.06 at 15h 15m 05s.xml">
+      <configuration name="NumbersExtensionsTest.intToRoman_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NumbersExtensionsTest_intToRoman_test - 2019.05.06 at 15h 15m 54s.xml">
+      <configuration name="NumbersExtensionsTest.intToRoman_test" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -420,7 +423,7 @@
         <line-breakpoint enabled="true" type="kotlin-line">
           <condition expression="x == -123" language="kotlin" />
           <url>file://$PROJECT_DIR$/src/NumbersExtensions.kt</url>
-          <line>30</line>
+          <line>32</line>
           <properties>
             <option name="lambda-ordinal" value="-1" />
           </properties>
@@ -428,7 +431,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/NumbersExtensions.kt</url>
-          <line>41</line>
+          <line>43</line>
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
@@ -612,20 +615,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/kotlin/text/StringsJVM.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="356" column="31" selection-start-line="356" selection-start-column="31" selection-end-line="356" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/common/kotlin/text/Strings.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="233" column="31" selection-start-line="233" selection-start-column="31" selection-end-line="233" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/RunAfters.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="139">
@@ -659,22 +648,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/StringExtensions.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="163" selection-start-line="159" selection-end-line="163" />
+        <state relative-caret-position="402">
+          <caret line="162" column="19" selection-start-line="162" selection-start-column="19" selection-end-line="162" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/kotlin/text/StringsJVM.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/regex/Pattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="1085" column="19" selection-start-line="1085" selection-start-column="19" selection-end-line="1085" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/regex/Matcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="948" column="18" selection-start-line="948" selection-start-column="18" selection-end-line="948" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/kotlin/text/regex/Regex.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="142" column="112" selection-start-line="142" selection-start-column="112" selection-end-line="142" selection-end-column="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/common/kotlin/text/Strings.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="691" column="31" selection-start-line="691" selection-start-column="31" selection-end-line="691" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/NumbersExtensions.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="106" selection-start-line="106" selection-end-line="106" />
+        <state relative-caret-position="768">
+          <caret line="150" column="5" lean-forward="true" selection-start-line="142" selection-end-line="150" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/NumbersExtensionsTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        <state relative-caret-position="388">
+          <caret line="68" column="23" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
           <folding>
             <element signature="e#0#95#0" expanded="true" />
           </folding>

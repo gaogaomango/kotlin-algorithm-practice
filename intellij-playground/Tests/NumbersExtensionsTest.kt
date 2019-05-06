@@ -59,4 +59,14 @@ class NumbersExtensionsTest {
         assertEquals(49, NumbersExtensions.maxArea2(intArrayOf(1,8,6,2,5,4,8,3,7)))
     }
 
+    @Test
+    fun intToRoman_test() {
+        assertEquals("III", NumbersExtensions.intToRoman(3))
+        assertEquals("IV", NumbersExtensions.intToRoman(4))
+        assertEquals("IX", NumbersExtensions.intToRoman(9))
+        assertEquals("LVIII", NumbersExtensions.intToRoman(58))
+        assertEquals("MCMXCIV", NumbersExtensions.intToRoman(1994))
+        assertEquals("I", NumbersExtensions.intToRoman(1))
+    }
+
 }
