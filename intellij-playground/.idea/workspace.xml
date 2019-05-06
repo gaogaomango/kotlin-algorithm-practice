@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d048457c-d89b-4d7e-8ae5-5ca6cf0baf73" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Tests/NumbersExtensionsTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/NumbersExtensionsTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/NumbersExtensions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/NumbersExtensions.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -38,28 +37,10 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/kotlin/String.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="371">
-                  <caret line="40" column="79" selection-start-line="40" selection-start-column="79" selection-end-line="40" selection-end-column="79" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/kotlin/CharSequence.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="140">
-                  <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/common/kotlin/text/Strings.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="691" column="31" selection-start-line="691" selection-start-column="31" selection-end-line="691" selection-end-column="31" />
+                <state relative-caret-position="207">
+                  <caret line="1185" column="14" selection-start-line="1185" selection-start-column="14" selection-end-line="1185" selection-end-column="14" />
                 </state>
               </provider>
             </entry>
@@ -94,8 +75,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/kotlin/text/StringsJVM.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="20">
-                  <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+                <state relative-caret-position="207">
+                  <caret line="72" column="12" selection-start-line="72" selection-start-column="12" selection-end-line="72" selection-end-column="12" />
                 </state>
               </provider>
             </entry>
@@ -103,8 +84,26 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/NumbersExtensions.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="768">
-                  <caret line="150" column="5" lean-forward="true" selection-start-line="142" selection-end-line="150" selection-end-column="5" />
+                <state relative-caret-position="442">
+                  <caret line="149" selection-start-line="149" selection-end-line="149" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/common/kotlin/util/Standard.kt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="391">
+                  <caret line="138" column="8" lean-forward="true" selection-start-line="138" selection-start-column="8" selection-end-line="138" selection-end-column="8" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/common/kotlin/contracts/ContractBuilder.kt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="195">
+                  <caret line="83" column="33" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
                 </state>
               </provider>
             </entry>
@@ -137,8 +136,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Tests/NumbersExtensionsTest.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="388">
-                  <caret line="68" column="23" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
+                <state relative-caret-position="288">
+                  <caret line="64" column="21" lean-forward="true" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
                   <folding>
                     <element signature="e#0#95#0" expanded="true" />
                   </folding>
@@ -177,8 +176,8 @@
         <option value="$PROJECT_DIR$/Tests/StringExtentionsTest.kt" />
         <option value="$PROJECT_DIR$/Tests/StringExtensionsTest.kt" />
         <option value="$PROJECT_DIR$/src/StringExtensions.kt" />
-        <option value="$PROJECT_DIR$/src/NumbersExtensions.kt" />
         <option value="$PROJECT_DIR$/Tests/NumbersExtensionsTest.kt" />
+        <option value="$PROJECT_DIR$/src/NumbersExtensions.kt" />
       </list>
     </option>
   </component>
@@ -336,34 +335,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StringExtensionsTest_isMatch_OK - 2019.05.03 at 13h 46m 38s.xml">
-      <configuration name="StringExtensionsTest.isMatch_OK" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StringExtensionsTest_isMatch_OK - 2019.05.03 at 13h 46m 45s.xml">
-      <configuration name="StringExtensionsTest.isMatch_OK" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NumbersExtensionsTest_maxArea_test - 2019.05.05 at 23h 54m 24s.xml">
-      <configuration name="NumbersExtensionsTest.maxArea_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NumbersExtensionsTest_maxArea_test - 2019.05.06 at 01h 02m 38s.xml">
-      <configuration name="NumbersExtensionsTest.maxArea_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NumbersExtensionsTest_maxArea_test - 2019.05.06 at 01h 03m 04s.xml">
-      <configuration name="NumbersExtensionsTest.maxArea_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NumbersExtensionsTest_maxArea2_test - 2019.05.06 at 01h 07m 11s.xml">
-      <configuration name="NumbersExtensionsTest.maxArea2_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NumbersExtensionsTest_intToRoman_test - 2019.05.06 at 14h 51m 15s.xml">
-      <configuration name="NumbersExtensionsTest.intToRoman_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NumbersExtensionsTest_intToRoman_test - 2019.05.06 at 14h 54m 03s.xml">
-      <configuration name="NumbersExtensionsTest.intToRoman_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NumbersExtensionsTest_intToRoman_test - 2019.05.06 at 15h 15m 05s.xml">
-      <configuration name="NumbersExtensionsTest.intToRoman_test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="NumbersExtensionsTest_intToRoman_test - 2019.05.06 at 15h 15m 54s.xml">
+      <configuration name="NumbersExtensionsTest.intToRoman_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NumbersExtensionsTest_intToRoman_test - 2019.05.06 at 15h 17m 15s.xml">
+      <configuration name="NumbersExtensionsTest.intToRoman_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NumbersExtensionsTest_intToRoman_test - 2019.05.06 at 15h 18m 26s.xml">
+      <configuration name="NumbersExtensionsTest.intToRoman_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NumbersExtensionsTest_intToRoman_test - 2019.05.06 at 15h 18m 35s.xml">
+      <configuration name="NumbersExtensionsTest.intToRoman_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NumbersExtensionsTest_intToRoman_test - 2019.05.06 at 15h 21m 53s.xml">
+      <configuration name="NumbersExtensionsTest.intToRoman_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NumbersExtensionsTest_intToRoman_test - 2019.05.06 at 15h 22m 27s.xml">
+      <configuration name="NumbersExtensionsTest.intToRoman_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NumbersExtensionsTest_intToRoman_test - 2019.05.06 at 15h 22m 34s.xml">
+      <configuration name="NumbersExtensionsTest.intToRoman_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NumbersExtensionsTest_intToRoman_test - 2019.05.06 at 15h 23m 26s.xml">
+      <configuration name="NumbersExtensionsTest.intToRoman_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NumbersExtensionsTest_intToRoman_test - 2019.05.06 at 15h 28m 17s.xml">
+      <configuration name="NumbersExtensionsTest.intToRoman_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NumbersExtensionsTest_intToRoman_test - 2019.05.06 at 15h 29m 26s.xml">
       <configuration name="NumbersExtensionsTest.intToRoman_test" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -453,11 +452,23 @@
           <properties />
           <option name="timeStamp" value="16" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <condition expression="num == 1" language="kotlin" />
+          <url>file://$PROJECT_DIR$/src/NumbersExtensions.kt</url>
+          <line>113</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="breakpointCondition">
+      <expression>
+        <expression-string>num == 1</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>p.equals(&quot;.&quot;)</expression-string>
         <language-id>kotlin</language-id>
@@ -653,13 +664,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/kotlin/text/StringsJVM.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/regex/Pattern.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -683,25 +687,46 @@
     </entry>
     <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/common/kotlin/text/Strings.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="691" column="31" selection-start-line="691" selection-start-column="31" selection-end-line="691" selection-end-column="31" />
+        <state relative-caret-position="207">
+          <caret line="1185" column="14" selection-start-line="1185" selection-start-column="14" selection-end-line="1185" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NumbersExtensions.kt">
+    <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/kotlin/text/StringsJVM.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="150" column="5" lean-forward="true" selection-start-line="142" selection-end-line="150" selection-end-column="5" />
+        <state relative-caret-position="207">
+          <caret line="72" column="12" selection-start-line="72" selection-start-column="12" selection-end-line="72" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/common/kotlin/contracts/ContractBuilder.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="83" column="33" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/common/kotlin/util/Standard.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="138" column="8" lean-forward="true" selection-start-line="138" selection-start-column="8" selection-end-line="138" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/NumbersExtensionsTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="68" column="23" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
+        <state relative-caret-position="288">
+          <caret line="64" column="21" lean-forward="true" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
           <folding>
             <element signature="e#0#95#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NumbersExtensions.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="149" selection-start-line="149" selection-end-line="149" />
         </state>
       </provider>
     </entry>

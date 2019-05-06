@@ -142,11 +142,9 @@ object NumbersExtensions {
 
     private fun addRoman(sb: StringBuilder, num: Int, devideNumber: Int, addLetter: String): Int {
         if(num >= devideNumber) {
-            var tmpCount = num / devideNumber
-            for (i in 0 until tmpCount) {
-                sb.append(addLetter)
-            }
+            repeat(num / devideNumber) {sb.append(addLetter)}
+            return num % devideNumber
         }
-        return num % devideNumber
+        return num
     }
 }
