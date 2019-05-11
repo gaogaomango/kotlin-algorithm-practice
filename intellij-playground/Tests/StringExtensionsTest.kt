@@ -61,4 +61,11 @@ class StringExtensionsTest {
         assertEquals(true, StringExtensions.isMatch("", ".*"))
     }
 
+    @Test
+    fun longestCommonPrefix_OK() {
+        assertEquals("fl", StringExtensions.longestCommonPrefix(arrayOf("flower","flow","flight")))
+        assertEquals("", StringExtensions.longestCommonPrefix(arrayOf("dog","racecar","car")))
+        assertEquals("", StringExtensions.longestCommonPrefix(arrayOf("dog","dogcafe","car")))
+    }
+
 }
