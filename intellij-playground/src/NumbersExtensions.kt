@@ -63,7 +63,7 @@ object NumbersExtensions {
 
     fun isPalindrome2(x: Int): Boolean {
         val xStr = x.toString()
-       return xStr == xStr.reversed()
+        return xStr == xStr.reversed()
     }
 
     fun maxArea(height: IntArray): Int {
@@ -146,5 +146,35 @@ object NumbersExtensions {
             return num % devideNumber
         }
         return num
+    }
+
+    fun romanToInt(s: String): Int {
+        var tmpS = s
+        tmpS = tmpS.replace( "CM".toRegex(), "CCCCCCCCC")
+        tmpS = tmpS.replace( "CM".toRegex(), "DCCCC")
+        tmpS = tmpS.replace( "CD".toRegex(), "CCCC")
+        tmpS = tmpS.replace( "XC".toRegex(), "XXXXXXXXX")
+        tmpS = tmpS.replace( "XC".toRegex(), "LXXXX")
+        tmpS = tmpS.replace( "XL".toRegex(), "XXXX")
+        tmpS = tmpS.replace( "IX".toRegex(), "IIIIIIIII")
+        tmpS = tmpS.replace( "IX".toRegex(), "VIIII")
+        tmpS = tmpS.replace( "IV".toRegex(), "IIII")
+
+        println("tmpS: $tmpS")
+
+        var total = 0
+        tmpS.forEach {
+            when(it) {
+                'I' -> total += 1
+                'V' -> total += 5
+                'X' -> total += 10
+                'L' -> total += 50
+                'C' -> total += 100
+                'D' -> total += 500
+                'M' -> total += 1000
+            }
+        }
+
+        return total
     }
 }

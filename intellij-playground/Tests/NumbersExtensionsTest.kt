@@ -69,4 +69,13 @@ class NumbersExtensionsTest {
         assertEquals("I", NumbersExtensions.intToRoman(1))
     }
 
+    @Test
+    fun romanToInt_test() {
+        assertEquals(NumbersExtensions.romanToInt("III"), 3)
+        assertEquals(NumbersExtensions.romanToInt("IV"), 4)
+        assertEquals(NumbersExtensions.romanToInt("IX"), 9)
+        assertEquals(NumbersExtensions.romanToInt("LVIII"), 58)
+        assertEquals(NumbersExtensions.romanToInt("MCMXCIV"), 1994)
+        assertEquals(NumbersExtensions.romanToInt("I"), 1)
+    }
 }
