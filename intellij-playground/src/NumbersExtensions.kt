@@ -177,4 +177,28 @@ object NumbersExtensions {
 
         return total
     }
+
+    fun threeSum(nums: IntArray): List<List<Int>> {
+        val ans: MutableList<List<Int>> = mutableListOf()
+        if(nums.isEmpty()) return ans
+        if(nums.size < 3) return ans
+        nums.sort()
+        for(i in nums.indices) {
+            if( i != 0 && nums[i] == nums[i -1]) continue
+            var j = i + 1
+            var k = nums.size - 1
+            while(j < k) {
+                if(nums[j] + nums[k] + nums[i] == 0) {
+                    ans.add(listOf(nums[i], nums[j++], nums[k--]))
+                    while(j < k && nums[j] == nums[j - 1]) j++
+                    while(j < k && nums[k] == nums[k + 1]) k--
+                } else if(nums[j] + nums[k] + nums[i] > 0) {
+                    k--
+                } else {
+                    j++
+                }
+            }
+        }
+        return ans
+    }
 }
