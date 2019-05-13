@@ -5,7 +5,7 @@ object NumbersExtensions {
         val sortedNums = nums1.plus(nums2).sorted()
         val mid = sortedNums.size / 2
 
-        return if(sortedNums.size % 2 == 0) {
+        return if (sortedNums.size % 2 == 0) {
             (sortedNums[mid] + sortedNums[mid - 1]).toDouble() / 2
         } else {
             sortedNums[mid].toDouble()
@@ -13,19 +13,19 @@ object NumbersExtensions {
 
     }
 
-    fun reverseInt(x: Int) : Int {
+    fun reverseInt(x: Int): Int {
         val xStr = x.toString()
         val list = mutableListOf<Char>()
         var isNegative = false
         var lastInt = 0
         var reverseInt: Int
 
-        if(xStr[0] == '-') {
+        if (xStr[0] == '-') {
             isNegative = true
             lastInt = 1
         }
 
-        for(i in xStr.length - 1 downTo lastInt) {
+        for (i in xStr.length - 1 downTo lastInt) {
             list.add(xStr[i])
         }
 
@@ -48,13 +48,13 @@ object NumbersExtensions {
         val xStr = x.toString()
         val len = xStr.length
 
-        if(len % 2 == 0) {
-            for(i in 0 until len / 2) {
-                if(xStr[i] == xStr[len - 1 - i]) continue else return false
+        if (len % 2 == 0) {
+            for (i in 0 until len / 2) {
+                if (xStr[i] == xStr[len - 1 - i]) continue else return false
             }
         } else {
-            for(i in 0 until len / 2 + 1) {
-                if(xStr[i] == xStr[len - 1 - i]) continue else return false
+            for (i in 0 until len / 2 + 1) {
+                if (xStr[i] == xStr[len - 1 - i]) continue else return false
             }
         }
 
@@ -67,8 +67,8 @@ object NumbersExtensions {
     }
 
     fun maxArea(height: IntArray): Int {
-        if(height.isEmpty()) return 0
-        if(height == null) return 0
+        if (height.isEmpty()) return 0
+        if (height == null) return 0
 
         var result = 0
         var tmpResult = 0
@@ -77,42 +77,42 @@ object NumbersExtensions {
         var leftHeight = 0
         var rightHeight = 0
 
-        while(leftPos < rightPos) {
+        while (leftPos < rightPos) {
             leftHeight = height[leftPos]
             rightHeight = height[rightPos]
 
-            if(leftHeight >= rightHeight) {
+            if (leftHeight >= rightHeight) {
                 tmpResult = (rightPos - leftPos) * rightHeight
                 rightPos--
             } else {
                 tmpResult = (rightPos - leftPos) * leftHeight
                 leftPos++
             }
-            result = if(tmpResult > result) tmpResult else result
+            result = if (tmpResult > result) tmpResult else result
         }
 
         return result
     }
 
     fun maxArea2(height: IntArray): Int {
-        if(height.isEmpty()) return 0
-        if(height == null) return 0
+        if (height.isEmpty()) return 0
+        if (height == null) return 0
 
         var leftPos = 0
         var rightPos = height.size - 1
         var result = 0
 
-        while(leftPos < rightPos) {
+        while (leftPos < rightPos) {
             result = Math.max(result, (rightPos - leftPos) * Math.min(height[leftPos], height[rightPos]))
-            if(height[leftPos] < height[rightPos]) leftPos++ else rightPos--
+            if (height[leftPos] < height[rightPos]) leftPos++ else rightPos--
         }
 
         return result
     }
 
     fun intToRoman(num: Int): String {
-        when(num) {
-            !in 1 .. 3999 -> return ""
+        when (num) {
+            !in 1..3999 -> return ""
         }
         val sb = StringBuilder()
         var tmpNum = num
@@ -141,8 +141,8 @@ object NumbersExtensions {
     }
 
     private fun addRoman(sb: StringBuilder, num: Int, devideNumber: Int, addLetter: String): Int {
-        if(num >= devideNumber) {
-            repeat(num / devideNumber) {sb.append(addLetter)}
+        if (num >= devideNumber) {
+            repeat(num / devideNumber) { sb.append(addLetter) }
             return num % devideNumber
         }
         return num
@@ -150,21 +150,21 @@ object NumbersExtensions {
 
     fun romanToInt(s: String): Int {
         var tmpS = s
-        tmpS = tmpS.replace( "CM".toRegex(), "CCCCCCCCC")
-        tmpS = tmpS.replace( "CM".toRegex(), "DCCCC")
-        tmpS = tmpS.replace( "CD".toRegex(), "CCCC")
-        tmpS = tmpS.replace( "XC".toRegex(), "XXXXXXXXX")
-        tmpS = tmpS.replace( "XC".toRegex(), "LXXXX")
-        tmpS = tmpS.replace( "XL".toRegex(), "XXXX")
-        tmpS = tmpS.replace( "IX".toRegex(), "IIIIIIIII")
-        tmpS = tmpS.replace( "IX".toRegex(), "VIIII")
-        tmpS = tmpS.replace( "IV".toRegex(), "IIII")
+        tmpS = tmpS.replace("CM".toRegex(), "CCCCCCCCC")
+        tmpS = tmpS.replace("CM".toRegex(), "DCCCC")
+        tmpS = tmpS.replace("CD".toRegex(), "CCCC")
+        tmpS = tmpS.replace("XC".toRegex(), "XXXXXXXXX")
+        tmpS = tmpS.replace("XC".toRegex(), "LXXXX")
+        tmpS = tmpS.replace("XL".toRegex(), "XXXX")
+        tmpS = tmpS.replace("IX".toRegex(), "IIIIIIIII")
+        tmpS = tmpS.replace("IX".toRegex(), "VIIII")
+        tmpS = tmpS.replace("IV".toRegex(), "IIII")
 
         println("tmpS: $tmpS")
 
         var total = 0
         tmpS.forEach {
-            when(it) {
+            when (it) {
                 'I' -> total += 1
                 'V' -> total += 5
                 'X' -> total += 10
@@ -180,19 +180,19 @@ object NumbersExtensions {
 
     fun threeSum(nums: IntArray): List<List<Int>> {
         val ans: MutableList<List<Int>> = mutableListOf()
-        if(nums.isEmpty()) return ans
-        if(nums.size < 3) return ans
+        if (nums.isEmpty()) return ans
+        if (nums.size < 3) return ans
         nums.sort()
-        for(i in nums.indices) {
-            if( i != 0 && nums[i] == nums[i -1]) continue
+        for (i in nums.indices) {
+            if (i != 0 && nums[i] == nums[i - 1]) continue
             var j = i + 1
             var k = nums.size - 1
-            while(j < k) {
-                if(nums[j] + nums[k] + nums[i] == 0) {
+            while (j < k) {
+                if (nums[j] + nums[k] + nums[i] == 0) {
                     ans.add(listOf(nums[i], nums[j++], nums[k--]))
-                    while(j < k && nums[j] == nums[j - 1]) j++
-                    while(j < k && nums[k] == nums[k + 1]) k--
-                } else if(nums[j] + nums[k] + nums[i] > 0) {
+                    while (j < k && nums[j] == nums[j - 1]) j++
+                    while (j < k && nums[k] == nums[k + 1]) k--
+                } else if (nums[j] + nums[k] + nums[i] > 0) {
                     k--
                 } else {
                     j++
@@ -200,5 +200,30 @@ object NumbersExtensions {
             }
         }
         return ans
+    }
+
+    fun threeSumClosest(nums: IntArray, target: Int): Int {
+        var ans = 0L
+        nums.sort()
+        var minDiff = Integer.MAX_VALUE
+        for (i in 0..(nums.size - 2)) {
+            var j = i + 1
+            var k = nums.size - 1
+            while (j < k) {
+                var curSum = nums[i] + nums[j] + nums[k]
+                if (curSum == target) {
+                    return curSum
+                } else if (curSum < target) {
+                    j++
+                } else {
+                    k--
+                }
+                if (minDiff > Math.abs(curSum - target)) {
+                    minDiff = Math.abs(curSum - target)
+                    ans = curSum.toLong()
+                }
+            }
+        }
+        return ans.toInt()
     }
 }

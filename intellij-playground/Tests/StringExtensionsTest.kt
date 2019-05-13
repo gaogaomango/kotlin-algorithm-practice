@@ -2,7 +2,6 @@ import org.junit.After
 import org.junit.Before
 import org.junit.Test
 import kotlin.test.assertEquals
-import kotlin.test.fail
 
 class StringExtensionsTest {
 
@@ -68,19 +67,4 @@ class StringExtensionsTest {
         assertEquals("", StringExtensions.longestCommonPrefix(arrayOf("dog","racecar","car")))
         assertEquals("", StringExtensions.longestCommonPrefix(arrayOf("dog","dogcafe","car")))
     }
-
-    @Test
-    fun threeSum_OK() {
-        val expectedArray = arrayListOf(listOf(-1, -1, 2), listOf(-1, 0, 1))
-        val result = NumbersExtensions.threeSum(intArrayOf(-1, 0, 1, 2, -1, -4))
-        if(result.isNullOrEmpty()) fail("null or empty")
-        if(expectedArray.size != result.size) {
-            fail("size is not same")
-        }
-        for(i in expectedArray.indices) {
-            assertEquals(true, expectedArray[i].containsAll(result[i]))
-            assertEquals(true, result[i].containsAll(expectedArray[i]))
-        }
-    }
-
 }
