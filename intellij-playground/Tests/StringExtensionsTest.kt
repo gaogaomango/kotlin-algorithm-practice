@@ -2,6 +2,7 @@ import org.junit.After
 import org.junit.Before
 import org.junit.Test
 import kotlin.test.assertEquals
+import kotlin.test.fail
 
 class StringExtensionsTest {
 
@@ -66,5 +67,18 @@ class StringExtensionsTest {
         assertEquals("fl", StringExtensions.longestCommonPrefix(arrayOf("flower","flow","flight")))
         assertEquals("", StringExtensions.longestCommonPrefix(arrayOf("dog","racecar","car")))
         assertEquals("", StringExtensions.longestCommonPrefix(arrayOf("dog","dogcafe","car")))
+    }
+
+    @Test
+    fun letterCombinations_OK() {
+        val result = StringExtensions.letterCombinations("23")
+        val sortedList = result.sorted()
+        val expectation = listOf("ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf").sorted()
+        if(sortedList.size != expectation.size) {
+            fail("size is not same")
+        }
+        for((index, value) in sortedList.withIndex()) {
+            assertEquals(value, expectation[index])
+        }
     }
 }
