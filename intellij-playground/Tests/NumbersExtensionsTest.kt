@@ -98,4 +98,25 @@ class NumbersExtensionsTest {
         assertEquals(2, NumbersExtensions.threeSumClosest(intArrayOf(-1, 2, 1, -4), 1))
     }
 
+    @Test
+    fun fourSum_OK() {
+        var result = NumbersExtensions.fourSum(intArrayOf(1, 0, -1, 0, -2, 2), 0)
+        var expectation = listOf(listOf(-1,  0, 0, 1), listOf(-2,  0, 0, 2), listOf(-2, -1, 1, 2))
+        result = result.sortedBy { it[0] }.sortedBy { it[1] }
+        expectation = expectation.sortedBy { it[0] }.sortedBy { it[1] }
+        println(result)
+        println(expectation)
+        if(result.size != expectation.size) {
+            fail("result size is not right")
+        }
+        for((index, value) in result.withIndex()) {
+            if(value.size != expectation[index].size) {
+                fail("child result size is not right")
+            }
+            val sortedVal = value.sorted()
+            for((i, v) in sortedVal.withIndex()) {
+                assertEquals(expectation[index][i], v)
+            }
+        }
+    }
 }

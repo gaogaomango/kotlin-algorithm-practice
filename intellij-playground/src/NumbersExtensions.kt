@@ -226,4 +226,35 @@ object NumbersExtensions {
         }
         return ans.toInt()
     }
+
+    fun fourSum(nums: IntArray, target: Int): List<List<Int>> {
+        if(nums.isEmpty() || nums.size < 4) return emptyList()
+        val result = mutableSetOf<List<Int>>()
+        nums.sort()
+        var i = 0
+        var j = 0
+        var k = 0
+        var l = 0
+
+        for (i in 0..nums.size -3) {
+            j = i + 1
+            for(j in i+1..nums.size - 2) {
+                k = j + 1
+                l = nums.lastIndex
+                while(k < l) {
+                    var tmpResult = nums[i] + nums[j] + nums[k] + nums[l] - target
+                    if(tmpResult == 0) {
+                        result.add(listOf(nums[i], nums[j], nums[k], nums[l]))
+                        k++
+                        l--
+                    } else if(tmpResult > 0) {
+                        l--
+                    } else {
+                        k++
+                    }
+                }
+            }
+        }
+        return result.toList()
+    }
 }
