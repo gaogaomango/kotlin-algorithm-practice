@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d048457c-d89b-4d7e-8ae5-5ca6cf0baf73" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Tests/NumbersExtensionsTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/NumbersExtensionsTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NumbersExtensions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/NumbersExtensions.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/CollectionUtilTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CollectionUtil.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ListNode.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,19 +52,28 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/kotlin/text/StringsJVM.kt">
+            <entry file="file://$PROJECT_DIR$/src/NumbersExtensions.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1340">
-                  <caret line="72" column="12" selection-start-line="72" selection-start-column="12" selection-end-line="72" selection-end-column="12" />
+                <state relative-caret-position="5180">
+                  <caret line="259" column="1" lean-forward="true" selection-start-line="259" selection-start-column="1" selection-end-line="259" selection-end-column="1" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/ListNode.kt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="20">
+                  <caret line="1" column="30" lean-forward="true" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/NumbersExtensions.kt">
+            <entry file="file://$PROJECT_DIR$/src/CollectionUtil.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="410">
-                  <caret line="244" column="74" selection-start-line="244" selection-start-column="74" selection-end-line="244" selection-end-column="74" />
+                <state relative-caret-position="60">
+                  <caret line="3" column="45" lean-forward="true" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
                 </state>
               </provider>
             </entry>
@@ -90,24 +101,6 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="187">
                   <caret line="883" column="41" selection-start-line="883" selection-start-column="41" selection-end-line="883" selection-end-column="41" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/common/kotlin/util/Standard.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2700">
-                  <caret line="138" column="8" selection-start-line="138" selection-start-column="8" selection-end-line="138" selection-end-column="8" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/common/kotlin/contracts/ContractBuilder.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1580">
-                  <caret line="83" column="33" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
                 </state>
               </provider>
             </entry>
@@ -146,20 +139,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/common/kotlin/collections/Collections.kt">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Tests/CollectionUtilTest.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="151" column="25" selection-start-line="151" selection-start-column="25" selection-end-line="151" selection-end-column="25" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-test.jar!/kotlin/test/AssertionsKt.class">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="178">
-                  <caret line="17" column="73" selection-start-line="17" selection-start-column="73" selection-end-line="17" selection-end-column="73" />
+                <state relative-caret-position="215">
+                  <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
                 </state>
               </provider>
             </entry>
@@ -173,7 +157,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Tests/NumbersExtensionsTest.kt">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="161">
@@ -212,6 +196,7 @@
       <list>
         <option value="Kotlin File" />
         <option value="Kotlin Object" />
+        <option value="Kotlin Class" />
         <option value="JUnit4 Test Class" />
       </list>
     </option>
@@ -242,6 +227,10 @@
         <option value="$PROJECT_DIR$/src/StringExtensions.kt" />
         <option value="$PROJECT_DIR$/src/NumbersExtensions.kt" />
         <option value="$PROJECT_DIR$/Tests/NumbersExtensionsTest.kt" />
+        <option value="$PROJECT_DIR$/src/ListNode.kt" />
+        <option value="$PROJECT_DIR$/Tests/CollectionUtilTest.java" />
+        <option value="$PROJECT_DIR$/Tests/CollectionUtilTest.kt" />
+        <option value="$PROJECT_DIR$/src/CollectionUtil.kt" />
       </list>
     </option>
   </component>
@@ -324,7 +313,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.NumbersExtensionsTest.fourSum_OK">
+  <component name="RunManager" selected="JUnit.CollectionUtilTest.removeNthFromEnd_OK">
+    <configuration name="CollectionUtilTest.removeNthFromEnd_OK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="intellij-playground" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CollectionUtilTest" />
+      <option name="METHOD_NAME" value="removeNthFromEnd_OK" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="NumbersExtensionsTest.fourSum_OK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="intellij-playground" />
       <option name="PACKAGE_NAME" value="" />
@@ -355,16 +354,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringExtensionsTest.longestCommonPrefix_OK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="intellij-playground" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StringExtensionsTest" />
-      <option name="METHOD_NAME" value="longestCommonPrefix_OK" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="StringExtensionsTest.threeSum_OK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="intellij-playground" />
       <option name="PACKAGE_NAME" value="" />
@@ -377,11 +366,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CollectionUtilTest.removeNthFromEnd_OK" />
         <item itemvalue="JUnit.NumbersExtensionsTest.fourSum_OK" />
         <item itemvalue="JUnit.StringExtensionsTest.letterCombinations_OK" />
         <item itemvalue="JUnit.NumbersExtensionsTest.threeSumClosest_OK" />
         <item itemvalue="JUnit.StringExtensionsTest.threeSum_OK" />
-        <item itemvalue="JUnit.StringExtensionsTest.longestCommonPrefix_OK" />
       </list>
     </recent_temporary>
   </component>
@@ -399,21 +388,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="NumbersExtensionsTest_fourSum_OK - 2019.05.15 at 22h 15m 29s.xml">
-      <configuration name="NumbersExtensionsTest.fourSum_OK" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NumbersExtensionsTest_fourSum_OK - 2019.05.15 at 22h 24m 14s.xml">
-      <configuration name="NumbersExtensionsTest.fourSum_OK" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NumbersExtensionsTest_fourSum_OK - 2019.05.15 at 22h 24m 52s.xml">
-      <configuration name="NumbersExtensionsTest.fourSum_OK" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NumbersExtensionsTest_fourSum_OK - 2019.05.15 at 22h 25m 08s.xml">
-      <configuration name="NumbersExtensionsTest.fourSum_OK" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NumbersExtensionsTest_fourSum_OK - 2019.05.15 at 22h 27m 57s.xml">
-      <configuration name="NumbersExtensionsTest.fourSum_OK" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="NumbersExtensionsTest_fourSum_OK - 2019.05.15 at 22h 29m 29s.xml">
       <configuration name="NumbersExtensionsTest.fourSum_OK" configurationId="JUnit" />
     </history-entry>
@@ -428,6 +402,21 @@
     </history-entry>
     <history-entry file="NumbersExtensionsTest_fourSum_OK - 2019.05.15 at 22h 35m 47s.xml">
       <configuration name="NumbersExtensionsTest.fourSum_OK" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CollectionUtilTest_removeNthFromEnd_OK - 2019.05.16 at 20h 44m 02s.xml">
+      <configuration name="CollectionUtilTest.removeNthFromEnd_OK" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CollectionUtilTest_removeNthFromEnd_OK - 2019.05.16 at 20h 44m 21s.xml">
+      <configuration name="CollectionUtilTest.removeNthFromEnd_OK" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CollectionUtilTest_removeNthFromEnd_OK - 2019.05.16 at 20h 52m 15s.xml">
+      <configuration name="CollectionUtilTest.removeNthFromEnd_OK" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CollectionUtilTest_removeNthFromEnd_OK - 2019.05.16 at 20h 52m 32s.xml">
+      <configuration name="CollectionUtilTest.removeNthFromEnd_OK" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CollectionUtilTest_removeNthFromEnd_OK - 2019.05.16 at 20h 58m 52s.xml">
+      <configuration name="CollectionUtilTest.removeNthFromEnd_OK" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -753,13 +742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/common/kotlin/collections/Collections.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="151" column="25" selection-start-line="151" selection-start-column="25" selection-end-line="151" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/generated/_ArraysJvm.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
@@ -822,13 +804,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NumbersExtensions.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="244" column="74" selection-start-line="244" selection-start-column="74" selection-end-line="244" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/common/kotlin/comparisons/Comparisons.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -850,6 +825,41 @@
           <folding>
             <element signature="e#0#95#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ListNode.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="30" lean-forward="true" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/common/kotlin/collections/Collections.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="151" column="25" selection-start-line="151" selection-start-column="25" selection-end-line="151" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NumbersExtensions.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5180">
+          <caret line="259" column="1" lean-forward="true" selection-start-line="259" selection-start-column="1" selection-end-line="259" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/CollectionUtilTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CollectionUtil.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="45" lean-forward="true" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
         </state>
       </provider>
     </entry>
