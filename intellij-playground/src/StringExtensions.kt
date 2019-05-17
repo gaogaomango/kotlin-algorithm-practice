@@ -202,4 +202,44 @@ object StringExtensions {
                 }
             }
     }
+
+    fun isValidBracketPair(s: String): Boolean {
+        if(s.length % 2 != 0) return false
+        val stackList = mutableListOf<Char>()
+        s.forEach { charcter ->
+            if(stackList.isEmpty()) {
+                when (charcter) {
+                    '(', '[', '{' -> stackList.add(charcter)
+                    else -> return false
+                }
+            } else {
+                when (charcter) {
+                    '(', '[', '{' -> stackList.add(charcter)
+                    ')' -> {
+                        if(stackList.lastOrNull() == '(') {
+                            stackList.removeAt(stackList.lastIndex)
+                        } else {
+                            return false
+                        }
+                    }
+                    ']' -> {
+                        if(stackList.lastOrNull() == '[') {
+                            stackList.removeAt(stackList.lastIndex)
+                        } else {
+                            return false
+                        }
+                    }
+                    '}' -> {
+                        if(stackList.lastOrNull() == '{') {
+                            stackList.removeAt(stackList.lastIndex)
+                        } else {
+                            return false
+                        }
+                    }
+                }
+            }
+        }
+
+        return stackList.isEmpty()
+    }
 }

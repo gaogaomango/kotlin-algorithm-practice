@@ -81,4 +81,13 @@ class StringExtensionsTest {
             assertEquals(value, expectation[index])
         }
     }
+
+    @Test
+    fun isValidBracketPair_OK() {
+        assertEquals(true, StringExtensions.isValidBracketPair("()"))
+        assertEquals(true, StringExtensions.isValidBracketPair("()[]{}"))
+        assertEquals(false, StringExtensions.isValidBracketPair("(]"))
+        assertEquals(false, StringExtensions.isValidBracketPair("([)]"))
+        assertEquals(false, StringExtensions.isValidBracketPair("["))
+    }
 }
