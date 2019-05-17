@@ -18,7 +18,7 @@ object CollectionUtil {
         return start?.next
     }
 
-    fun mergeTwoLists(l1: ListNode?, l2: ListNode?): ListNode? {
+    fun mergeTwoLists(_l1: ListNode?, _l2: ListNode?): ListNode? {
         var l1 = _l1
         var l2 = _l2
 
@@ -41,7 +41,7 @@ object CollectionUtil {
                 l1 = l1?.next
             }
             else {
-                if (l1?.`val` < l2?.`val`) {
+                if (l1?.value < l2?.value) {
                     cur?.next = l1
                     cur = l1
                     l1 = l1?.next
