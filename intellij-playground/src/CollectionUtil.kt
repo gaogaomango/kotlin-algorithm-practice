@@ -52,57 +52,9 @@ object CollectionUtil {
                     l2 = l2?.next
                 }
             }
-        } // end of while
+        }
 
         return dummyHead?.next
-
-//        var result: ListNode? = ListNode(0)
-//        var tmpList1 = l1
-//        var tmpList2 = l2
-//        var head = tmpList1
-//        head = head?.next
-//        var bet: ListNode? = head
-//
-//        while(!(tmpList1 == null && tmpList2 == null)) {
-//            if(tmpList2 != null) {
-//                head?.next = tmpList2
-//                head = head?.next
-//            }
-//            if(tmpList1 != null) {
-//                head?.next = tmpList1
-//                head = head?.next
-//            }
-//            tmpList1 = tmpList1?.next
-//            tmpList2 = tmpList2?.next
-//        }
-//
-//        return bet
-
-//        while(tmpList1 != null && tmpList2 != null) {
-//            if(tmpList1?.next!!.value <= tmpList2?.next!!.value) {
-//                tmpResult?.next = ListNode(tmpList1?.next!!.value)
-//                tmpList1 = tmpList1.next
-//                tmpResult = tmpResult?.next
-//            } else {
-//                tmpResult?.next = ListNode(tmpList2?.next!!.value)
-//                tmpResult = tmpResult?.next
-//                tmpList2 = tmpList2.next
-//            }
-//        }
-//
-//        while (tmpList1?.next != null) {
-//            tmpResult?.next = ListNode(tmpList1?.next!!.value)
-//            tmpResult = tmpResult?.next
-//            tmpList1 = tmpList1.next
-//        }
-//
-//        while (tmpList2?.next != null) {
-//            tmpResult?.next = ListNode(tmpList2?.next!!.value)
-//            tmpResult = tmpResult?.next
-//            tmpList2 = tmpList2.next
-//        }
-//
-//        return result?.next
     }
 
 }

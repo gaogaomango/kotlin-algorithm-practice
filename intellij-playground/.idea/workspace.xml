@@ -78,8 +78,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/CollectionUtil.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="491">
-                  <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
+                <state relative-caret-position="221">
+                  <caret line="34" selection-start-line="34" selection-end-line="34" />
                 </state>
               </provider>
             </entry>
@@ -148,8 +148,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Tests/CollectionUtilTest.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="273">
-                  <caret line="69" column="43" selection-start-line="69" selection-start-column="43" selection-end-line="69" selection-end-column="43" />
+                <state relative-caret-position="555">
+                  <caret line="68" selection-start-line="68" selection-end-line="68" />
                 </state>
               </provider>
             </entry>
@@ -376,12 +376,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CollectionUtilTest_mergeTwoLists_OK - 2019.05.17 at 20h 25m 37s.xml">
-      <configuration name="CollectionUtilTest.mergeTwoLists_OK" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CollectionUtilTest_mergeTwoLists_OK - 2019.05.17 at 20h 26m 57s.xml">
-      <configuration name="CollectionUtilTest.mergeTwoLists_OK" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CollectionUtilTest_mergeTwoLists_OK - 2019.05.17 at 20h 27m 26s.xml">
       <configuration name="CollectionUtilTest.mergeTwoLists_OK" configurationId="JUnit" />
     </history-entry>
@@ -404,6 +398,12 @@
       <configuration name="CollectionUtilTest.mergeTwoLists_OK" configurationId="JUnit" />
     </history-entry>
     <history-entry file="CollectionUtilTest_mergeTwoLists_OK - 2019.05.17 at 20h 38m 59s.xml">
+      <configuration name="CollectionUtilTest.mergeTwoLists_OK" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CollectionUtilTest_mergeTwoLists_OK - 2019.05.17 at 20h 40m 59s.xml">
+      <configuration name="CollectionUtilTest.mergeTwoLists_OK" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CollectionUtilTest_mergeTwoLists_OK - 2019.05.18 at 11h 18m 24s.xml">
       <configuration name="CollectionUtilTest.mergeTwoLists_OK" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -430,7 +430,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.29685807" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29685807" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -438,7 +438,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.32719395" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32719395" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -852,15 +852,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/CollectionUtilTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="69" column="43" selection-start-line="69" selection-start-column="43" selection-end-line="69" selection-end-column="43" />
+        <state relative-caret-position="555">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CollectionUtil.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
+        <state relative-caret-position="221">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
