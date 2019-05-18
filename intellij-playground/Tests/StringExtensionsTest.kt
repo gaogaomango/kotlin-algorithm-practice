@@ -90,4 +90,25 @@ class StringExtensionsTest {
         assertEquals(false, StringExtensions.isValidBracketPair("([)]"))
         assertEquals(false, StringExtensions.isValidBracketPair("["))
     }
+
+    @Test
+    fun generateParenthesis_OK() {
+        val expectation = listOf(  "((()))",
+            "(()())",
+            "(())()",
+            "()(())",
+            "()()()")
+        val result = StringExtensions.generateParenthesis(3)
+        val sortedResult = result.sortedBy { it[1] }.sortedBy { it[2] }.sortedBy { it[3] }
+        val sortedExpectation = expectation.sortedBy { it[1] }.sortedBy { it[2] }.sortedBy { it[3] }
+        println(sortedResult)
+        println(sortedExpectation)
+        if(sortedExpectation.size != sortedResult.size) {
+            fail("size is not same as expectation")
+        }
+        for((i, v) in sortedResult.withIndex()) {
+            assertEquals(sortedExpectation[i], v)
+        }
+
+    }
 }

@@ -1,5 +1,7 @@
 import java.lang.StringBuilder
 import java.math.BigInteger
+import java.util.*
+import kotlin.collections.ArrayList
 
 object StringExtensions {
     fun lengthOfLongestSubstring(s: String): Int {
@@ -241,5 +243,21 @@ object StringExtensions {
         }
 
         return stackList.isEmpty()
+    }
+
+    fun generateParenthesis(n: Int): List<String> {
+        if(n == 0) return listOf()
+        val insertString = "()"
+        if(n == 1) return listOf(insertString)
+
+        val result = mutableListOf<String>()
+        for(str in generateParenthesis(n -1)) {
+            for(i in 1..str.length) {
+                val newStr = str.substring(0, i) + insertString + str.substring(i, str.length)
+                result.add(newStr)
+            }
+        }
+
+        return result.distinct()
     }
 }

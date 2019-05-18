@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d048457c-d89b-4d7e-8ae5-5ca6cf0baf73" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/CollectionUtil.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/CollectionUtil.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/StringExtensionsTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/StringExtensionsTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StringExtensions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringExtensions.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,14 +19,32 @@
     <splitter split-orientation="horizontal" split-proportion="0.48168838">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/StringExtensions.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="267">
-                  <caret line="206" column="8" selection-start-line="206" selection-start-column="8" selection-end-line="206" selection-end-column="42" />
+                <state relative-caret-position="327">
+                  <caret line="255" column="63" selection-start-line="255" selection-start-column="63" selection-end-line="255" selection-end-column="63" />
                   <folding>
-                    <element signature="e#0#58#0" expanded="true" />
+                    <element signature="e#0#113#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/common/generated/_Collections.kt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="228">
+                  <caret line="1395" column="21" selection-start-line="1395" selection-start-column="21" selection-end-line="1395" selection-end-column="21" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/kotlin/collections/TypeAliases.kt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="240">
+                  <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
                 </state>
               </provider>
             </entry>
@@ -49,15 +68,6 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/common/kotlin/text/Strings.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="309" column="24" selection-start-line="309" selection-start-column="24" selection-end-line="309" selection-end-column="24" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/NumbersExtensions.kt">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="5180">
@@ -75,11 +85,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/CollectionUtil.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="34" selection-start-line="34" selection-end-line="34" />
+                <state relative-caret-position="421">
+                  <caret line="56" column="30" lean-forward="true" selection-start-line="21" selection-end-line="56" selection-end-column="30" />
                 </state>
               </provider>
             </entry>
@@ -89,15 +99,6 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="194">
                   <caret line="6557" column="20" selection-start-line="6557" selection-start-column="20" selection-end-line="6557" selection-end-column="20" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/generated/_ArraysJvm.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="235">
-                  <caret line="1444" column="57" lean-forward="true" selection-start-line="1444" selection-start-column="57" selection-end-line="1444" selection-end-column="57" />
                 </state>
               </provider>
             </entry>
@@ -115,11 +116,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Tests/StringExtensionsTest.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="387">
-                  <caret line="88" column="26" selection-start-line="88" selection-start-column="26" selection-end-line="88" selection-end-column="26" />
+                <state relative-caret-position="241">
+                  <caret line="101" column="71" selection-start-line="101" selection-start-column="71" selection-end-line="101" selection-end-column="90" />
                   <folding>
                     <element signature="e#0#124#0" expanded="true" />
                   </folding>
@@ -145,11 +146,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Tests/CollectionUtilTest.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="555">
-                  <caret line="68" selection-start-line="68" selection-end-line="68" />
+                <state relative-caret-position="195">
+                  <caret line="50" column="36" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
                 </state>
               </provider>
             </entry>
@@ -215,10 +216,10 @@
         <option value="$PROJECT_DIR$/Tests/NumbersExtensionsTest.kt" />
         <option value="$PROJECT_DIR$/src/ListNode.kt" />
         <option value="$PROJECT_DIR$/Tests/CollectionUtilTest.java" />
-        <option value="$PROJECT_DIR$/Tests/StringExtensionsTest.kt" />
-        <option value="$PROJECT_DIR$/src/StringExtensions.kt" />
         <option value="$PROJECT_DIR$/Tests/CollectionUtilTest.kt" />
         <option value="$PROJECT_DIR$/src/CollectionUtil.kt" />
+        <option value="$PROJECT_DIR$/src/StringExtensions.kt" />
+        <option value="$PROJECT_DIR$/Tests/StringExtensionsTest.kt" />
       </list>
     </option>
   </component>
@@ -301,7 +302,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CollectionUtilTest.mergeTwoLists_OK">
+  <component name="RunManager" selected="JUnit.StringExtensionsTest.generateParenthesis_OK">
     <configuration name="CollectionUtilTest.mergeTwoLists_OK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="intellij-playground" />
       <option name="PACKAGE_NAME" value="" />
@@ -332,6 +333,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StringExtensionsTest.generateParenthesis_OK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="intellij-playground" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StringExtensionsTest" />
+      <option name="METHOD_NAME" value="generateParenthesis_OK" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StringExtensionsTest.isValidBracketPair_OK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="intellij-playground" />
       <option name="PACKAGE_NAME" value="" />
@@ -342,23 +353,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringExtensionsTest.letterCombinations_OK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="intellij-playground" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StringExtensionsTest" />
-      <option name="METHOD_NAME" value="letterCombinations_OK" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StringExtensionsTest.generateParenthesis_OK" />
         <item itemvalue="JUnit.CollectionUtilTest.mergeTwoLists_OK" />
         <item itemvalue="JUnit.StringExtensionsTest.isValidBracketPair_OK" />
         <item itemvalue="JUnit.CollectionUtilTest.removeNthFromEnd_OK" />
         <item itemvalue="JUnit.NumbersExtensionsTest.fourSum_OK" />
-        <item itemvalue="JUnit.StringExtensionsTest.letterCombinations_OK" />
       </list>
     </recent_temporary>
   </component>
@@ -376,35 +377,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CollectionUtilTest_mergeTwoLists_OK - 2019.05.17 at 20h 27m 26s.xml">
-      <configuration name="CollectionUtilTest.mergeTwoLists_OK" configurationId="JUnit" />
+    <history-entry file="StringExtensionsTest_generateParenthesis_OK - 2019.05.18 at 11h 29m 22s.xml">
+      <configuration name="StringExtensionsTest.generateParenthesis_OK" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CollectionUtilTest_mergeTwoLists_OK - 2019.05.17 at 20h 28m 33s.xml">
-      <configuration name="CollectionUtilTest.mergeTwoLists_OK" configurationId="JUnit" />
+    <history-entry file="StringExtensionsTest_generateParenthesis_OK - 2019.05.18 at 11h 46m 16s.xml">
+      <configuration name="StringExtensionsTest.generateParenthesis_OK" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CollectionUtilTest_mergeTwoLists_OK - 2019.05.17 at 20h 29m 05s.xml">
-      <configuration name="CollectionUtilTest.mergeTwoLists_OK" configurationId="JUnit" />
+    <history-entry file="StringExtensionsTest_generateParenthesis_OK - 2019.05.18 at 11h 47m 25s.xml">
+      <configuration name="StringExtensionsTest.generateParenthesis_OK" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CollectionUtilTest_mergeTwoLists_OK - 2019.05.17 at 20h 29m 20s.xml">
-      <configuration name="CollectionUtilTest.mergeTwoLists_OK" configurationId="JUnit" />
+    <history-entry file="StringExtensionsTest_generateParenthesis_OK - 2019.05.18 at 11h 48m 05s.xml">
+      <configuration name="StringExtensionsTest.generateParenthesis_OK" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CollectionUtilTest_mergeTwoLists_OK - 2019.05.17 at 20h 30m 38s.xml">
-      <configuration name="CollectionUtilTest.mergeTwoLists_OK" configurationId="JUnit" />
+    <history-entry file="StringExtensionsTest_generateParenthesis_OK - 2019.05.18 at 11h 51m 49s.xml">
+      <configuration name="StringExtensionsTest.generateParenthesis_OK" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CollectionUtilTest_mergeTwoLists_OK - 2019.05.17 at 20h 31m 34s.xml">
-      <configuration name="CollectionUtilTest.mergeTwoLists_OK" configurationId="JUnit" />
+    <history-entry file="StringExtensionsTest_generateParenthesis_OK - 2019.05.18 at 11h 54m 16s.xml">
+      <configuration name="StringExtensionsTest.generateParenthesis_OK" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CollectionUtilTest_mergeTwoLists_OK - 2019.05.17 at 20h 31m 42s.xml">
-      <configuration name="CollectionUtilTest.mergeTwoLists_OK" configurationId="JUnit" />
+    <history-entry file="StringExtensionsTest_generateParenthesis_OK - 2019.05.18 at 11h 54m 39s.xml">
+      <configuration name="StringExtensionsTest.generateParenthesis_OK" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CollectionUtilTest_mergeTwoLists_OK - 2019.05.17 at 20h 38m 59s.xml">
-      <configuration name="CollectionUtilTest.mergeTwoLists_OK" configurationId="JUnit" />
+    <history-entry file="StringExtensionsTest_generateParenthesis_OK - 2019.05.18 at 11h 54m 59s.xml">
+      <configuration name="StringExtensionsTest.generateParenthesis_OK" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CollectionUtilTest_mergeTwoLists_OK - 2019.05.17 at 20h 40m 59s.xml">
-      <configuration name="CollectionUtilTest.mergeTwoLists_OK" configurationId="JUnit" />
+    <history-entry file="StringExtensionsTest_generateParenthesis_OK - 2019.05.18 at 11h 56m 19s.xml">
+      <configuration name="StringExtensionsTest.generateParenthesis_OK" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CollectionUtilTest_mergeTwoLists_OK - 2019.05.18 at 11h 18m 24s.xml">
-      <configuration name="CollectionUtilTest.mergeTwoLists_OK" configurationId="JUnit" />
+    <history-entry file="StringExtensionsTest_generateParenthesis_OK - 2019.05.18 at 11h 56m 37s.xml">
+      <configuration name="StringExtensionsTest.generateParenthesis_OK" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -454,7 +455,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/StringExtensions.kt</url>
-          <line>78</line>
+          <line>80</line>
           <properties>
             <option name="lambda-ordinal" value="-1" />
           </properties>
@@ -477,13 +478,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/StringExtensions.kt</url>
-          <line>150</line>
+          <line>152</line>
           <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/StringExtensions.kt</url>
-          <line>118</line>
+          <line>120</line>
           <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
@@ -799,13 +800,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/common/generated/_Collections.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="439" column="41" lean-forward="true" selection-start-line="439" selection-start-column="41" selection-end-line="439" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/NumbersExtensionsTest.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="341">
@@ -823,26 +817,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/StringExtensionsTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="88" column="26" selection-start-line="88" selection-start-column="26" selection-end-line="88" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#124#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/StringExtensions.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="206" column="8" selection-start-line="206" selection-start-column="8" selection-end-line="206" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ListNode.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -852,15 +826,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/CollectionUtilTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
+        <state relative-caret-position="195">
+          <caret line="50" column="36" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CollectionUtil.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="421">
+          <caret line="56" column="30" lean-forward="true" selection-start-line="21" selection-end-line="56" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/kotlin/collections/TypeAliases.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/common/generated/_Collections.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="1395" column="21" selection-start-line="1395" selection-start-column="21" selection-end-line="1395" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StringExtensions.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="255" column="63" selection-start-line="255" selection-start-column="63" selection-end-line="255" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#113#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/StringExtensionsTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="101" column="71" selection-start-line="101" selection-start-column="71" selection-end-line="101" selection-end-column="90" />
+          <folding>
+            <element signature="e#0#124#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
