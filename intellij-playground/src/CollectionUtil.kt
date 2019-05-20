@@ -57,4 +57,44 @@ object CollectionUtil {
         return dummyHead?.next
     }
 
+
+    fun mergeKLists(lists: Array<ListNode?>): ListNode? {
+        if(lists.size == 0) return null
+        if(lists.size == 1) return lists[0]
+
+        return lists.fold(null){
+                criteriaNode: ListNode?, nextNode: ListNode? ->
+
+            var dummyHead: ListNode? = ListNode(0)
+            var cur: ListNode? = dummyHead
+            var l1: ListNode? = criteriaNode
+            var l2: ListNode? = nextNode
+
+            while (l1 != null || l2 != null) {
+                if (l1 == null) {
+                    cur?.next = l2
+                    cur = l2
+                    l2 = l2?.next
+                }
+                else if (l2 == null) {
+                    cur?.next = l1
+                    cur = l1
+                    l1 = l1?.next
+                }
+                else {
+                    if (l1?.value < l2?.value) {
+                        cur?.next = l1
+                        cur = l1
+                        l1 = l1?.next
+                    }
+                    else {
+                        cur?.next = l2
+                        cur = l2
+                        l2 = l2?.next
+                    }
+                }
+            }
+            dummyHead?.next
+        }
+    }
 }

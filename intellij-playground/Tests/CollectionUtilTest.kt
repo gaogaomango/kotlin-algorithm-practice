@@ -76,4 +76,42 @@ class CollectionUtilTest {
             fail("the size is not expectation size")
         }
     }
+
+    @Test
+    fun mergeKLists_OK() {
+        val initialList1: ListNode? = ListNode(1)
+        initialList1?.next = ListNode(4)
+        initialList1?.next?.next = ListNode(5)
+
+        val initialList2: ListNode? = ListNode(1)
+        initialList2?.next = ListNode(3)
+        initialList2?.next?.next = ListNode(4)
+
+        val initialList3: ListNode? = ListNode(2)
+        initialList3?.next = ListNode(6)
+
+        val expectation = ListNode(1)
+        expectation.next = ListNode(1)
+        expectation.next?.next = ListNode(2)
+        expectation.next?.next?.next = ListNode(3)
+        expectation.next?.next?.next?.next = ListNode(4)
+        expectation.next?.next?.next?.next?.next = ListNode(4)
+        expectation.next?.next?.next?.next?.next?.next = ListNode(5)
+        expectation.next?.next?.next?.next?.next?.next?.next = ListNode(6)
+
+        val result = CollectionUtil.mergeKLists(arrayOf(initialList1, initialList2, initialList3))
+        var tmpResult = result
+        var tmpExpectation = expectation
+
+        while (tmpResult?.next != null && tmpExpectation?.next != null) {
+            assertEquals(tmpResult.next!!.value, tmpExpectation.next!!.value)
+            tmpResult = tmpResult.next
+            tmpExpectation = tmpExpectation.next!!
+        }
+        if((tmpResult?.next == null && tmpExpectation?.next != null)
+            || (tmpResult?.next != null && tmpExpectation?.next == null)) {
+            fail("the size is not expectation size")
+        }
+
+    }
 }
