@@ -114,4 +114,54 @@ class CollectionUtilTest {
         }
 
     }
+
+    @Test
+    fun swapPairs_OK() {
+        val inputNode: ListNode? = ListNode(1)
+        inputNode?.next = ListNode(2)
+        inputNode?.next?.next = ListNode(3)
+        inputNode?.next?.next?.next = ListNode(4)
+
+        val resultNode = CollectionUtil.swapPairs(inputNode)
+        var tmpResult = resultNode
+        var tmpExpectation: ListNode? = ListNode(2)
+        tmpExpectation?.next = ListNode(1)
+        tmpExpectation?.next?.next = ListNode(4)
+        tmpExpectation?.next?.next?.next = ListNode(3)
+
+        while (tmpResult?.next != null && tmpExpectation?.next != null) {
+            assertEquals(tmpResult.next!!.value, tmpExpectation?.next!!.value)
+            tmpResult = tmpResult.next
+            tmpExpectation = tmpExpectation!!.next!!
+        }
+        if((tmpResult?.next == null && tmpExpectation?.next != null)
+            || (tmpResult?.next != null && tmpExpectation?.next == null)) {
+            fail("the size is not expectation size")
+        }
+    }
+
+    @Test
+    fun swapPairs2_OK() {
+        val inputNode: ListNode? = ListNode(1)
+        inputNode?.next = ListNode(2)
+        inputNode?.next?.next = ListNode(3)
+        inputNode?.next?.next?.next = ListNode(4)
+
+        val resultNode = CollectionUtil.swapPairs2(inputNode)
+        var tmpResult = resultNode
+        var tmpExpectation: ListNode? = ListNode(2)
+        tmpExpectation?.next = ListNode(1)
+        tmpExpectation?.next?.next = ListNode(4)
+        tmpExpectation?.next?.next?.next = ListNode(3)
+
+        while (tmpResult?.next != null && tmpExpectation?.next != null) {
+            assertEquals(tmpResult.next!!.value, tmpExpectation?.next!!.value)
+            tmpResult = tmpResult.next
+            tmpExpectation = tmpExpectation!!.next!!
+        }
+        if((tmpResult?.next == null && tmpExpectation?.next != null)
+            || (tmpResult?.next != null && tmpExpectation?.next == null)) {
+            fail("the size is not expectation size")
+        }
+    }
 }

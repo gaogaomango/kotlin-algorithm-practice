@@ -97,4 +97,38 @@ object CollectionUtil {
             dummyHead?.next
         }
     }
+
+    fun swapPairs(head: ListNode?): ListNode? {
+        if(head == null) return null
+        if(head.next == null) return head
+        val seq = generateSequence(head){it.next}
+        fun swapNode(node1: ListNode, node2: ListNode) {
+            val tmp = node1.value
+            node1.value = node2.value
+            node2.value = tmp
+        }
+
+        seq.fold<ListNode, ListNode?>(null) { acc, listNode ->
+            acc?.also {
+                swapNode(acc, listNode)
+            }
+            if (acc == null) listNode else null
+        }
+        return head
+    }
+
+    fun swapPairs2(head: ListNode?): ListNode? {
+        if(head == null) return null
+        if(head.next == null) return head
+
+        var late = head
+        var fast = head.next
+
+        late.next = fast!!.next
+        fast!!.next = late
+
+        late.next = swapPairs2(late.next)
+
+        return fast
+    }
 }
