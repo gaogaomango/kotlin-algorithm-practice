@@ -164,4 +164,113 @@ class CollectionUtilTest {
             fail("the size is not expectation size")
         }
     }
+
+    @Test
+    fun reverseKGroup_OK1() {
+        val inputNode: ListNode? = ListNode(1)
+        inputNode?.next = ListNode(2)
+        inputNode?.next?.next = ListNode(3)
+        inputNode?.next?.next?.next = ListNode(4)
+        inputNode?.next?.next?.next?.next = ListNode(5)
+
+        val resultNode = CollectionUtil.reverseKGroup(inputNode, 2)
+        var tmpResult = resultNode
+        var tmpExpectation: ListNode? = ListNode(2)
+        tmpExpectation?.next = ListNode(1)
+        tmpExpectation?.next?.next = ListNode(4)
+        tmpExpectation?.next?.next?.next = ListNode(3)
+        tmpExpectation?.next?.next?.next?.next = ListNode(5)
+
+        while (tmpResult?.next != null && tmpExpectation?.next != null) {
+            assertEquals(tmpResult.next!!.value, tmpExpectation?.next!!.value)
+            tmpResult = tmpResult.next
+            tmpExpectation = tmpExpectation!!.next!!
+        }
+        if((tmpResult?.next == null && tmpExpectation?.next != null)
+            || (tmpResult?.next != null && tmpExpectation?.next == null)) {
+            fail("the size is not expectation size")
+        }
+    }
+
+    @Test
+    fun reverseKGroup_OK2() {
+        val inputNode: ListNode? = ListNode(1)
+        inputNode?.next = ListNode(2)
+        inputNode?.next?.next = ListNode(3)
+        inputNode?.next?.next?.next = ListNode(4)
+        inputNode?.next?.next?.next?.next = ListNode(5)
+
+        val resultNode = CollectionUtil.reverseKGroup(inputNode, 3)
+        var tmpResult = resultNode
+        var tmpExpectation: ListNode? = ListNode(3)
+        tmpExpectation?.next = ListNode(2)
+        tmpExpectation?.next?.next = ListNode(1)
+        tmpExpectation?.next?.next?.next = ListNode(4)
+        tmpExpectation?.next?.next?.next?.next = ListNode(5)
+
+        while (tmpResult?.next != null && tmpExpectation?.next != null) {
+            assertEquals(tmpResult.next!!.value, tmpExpectation?.next!!.value)
+            tmpResult = tmpResult.next
+            tmpExpectation = tmpExpectation!!.next!!
+        }
+        if((tmpResult?.next == null && tmpExpectation?.next != null)
+            || (tmpResult?.next != null && tmpExpectation?.next == null)) {
+            fail("the size is not expectation size")
+        }
+    }
+
+    @Test
+    fun reverseKGroup2_OK1() {
+        val inputNode: ListNode? = ListNode(1)
+        inputNode?.next = ListNode(2)
+        inputNode?.next?.next = ListNode(3)
+        inputNode?.next?.next?.next = ListNode(4)
+        inputNode?.next?.next?.next?.next = ListNode(5)
+
+        val resultNode = CollectionUtil.reverseKGroup2(inputNode, 2)
+        var tmpResult = resultNode
+        var tmpExpectation: ListNode? = ListNode(2)
+        tmpExpectation?.next = ListNode(1)
+        tmpExpectation?.next?.next = ListNode(4)
+        tmpExpectation?.next?.next?.next = ListNode(3)
+        tmpExpectation?.next?.next?.next?.next = ListNode(5)
+
+        while (tmpResult?.next != null && tmpExpectation?.next != null) {
+            assertEquals(tmpResult.next!!.value, tmpExpectation?.next!!.value)
+            tmpResult = tmpResult.next
+            tmpExpectation = tmpExpectation!!.next!!
+        }
+        if((tmpResult?.next == null && tmpExpectation?.next != null)
+            || (tmpResult?.next != null && tmpExpectation?.next == null)) {
+            fail("the size is not expectation size")
+        }
+    }
+
+    @Test
+    fun reverseKGroup2_OK2() {
+        val inputNode: ListNode? = ListNode(1)
+        inputNode?.next = ListNode(2)
+        inputNode?.next?.next = ListNode(3)
+        inputNode?.next?.next?.next = ListNode(4)
+        inputNode?.next?.next?.next?.next = ListNode(5)
+
+        val resultNode = CollectionUtil.reverseKGroup2(inputNode, 3)
+        var tmpResult = resultNode
+        var tmpExpectation: ListNode? = ListNode(3)
+        tmpExpectation?.next = ListNode(2)
+        tmpExpectation?.next?.next = ListNode(1)
+        tmpExpectation?.next?.next?.next = ListNode(4)
+        tmpExpectation?.next?.next?.next?.next = ListNode(5)
+
+        while (tmpResult?.next != null && tmpExpectation?.next != null) {
+            assertEquals(tmpResult.next!!.value, tmpExpectation?.next!!.value)
+            tmpResult = tmpResult.next
+            tmpExpectation = tmpExpectation!!.next!!
+        }
+        if((tmpResult?.next == null && tmpExpectation?.next != null)
+            || (tmpResult?.next != null && tmpExpectation?.next == null)) {
+            fail("the size is not expectation size")
+        }
+    }
+
 }

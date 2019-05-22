@@ -1,3 +1,5 @@
+import java.util.*
+
 object CollectionUtil {
 
     fun removeNthFromEnd(head: ListNode?, n: Int): ListNode? {
@@ -130,5 +132,67 @@ object CollectionUtil {
         late.next = swapPairs2(late.next)
 
         return fast
+    }
+
+    fun reverseKGroup(head: ListNode?, k: Int): ListNode? {
+        if(k < 0) return head
+        if(head == null) return head
+
+        var num = k
+        var first: ListNode? = head
+        var last: ListNode? = head
+
+        while(--num > 0 && last != null) {
+            last = last.next
+        }
+
+        if(last != null) {
+            var nextHead = last.next
+            val stack = Stack<ListNode>()
+            while(first != last) {
+                stack.push(first)
+                first = first!!.next
+            }
+
+            while(!stack.empty()) {
+                last!!.next = stack.pop()
+                last = last!!.next
+            }
+
+            last!!.next = reverseKGroup(nextHead, k)
+        }
+
+        return first
+    }
+
+    fun reverseKGroup2(head: ListNode?, k: Int): ListNode? {
+        if(k < 0) return head
+        if(head == null) return head
+
+        var num = k
+        var first: ListNode? = head
+        var last: ListNode? = head
+
+        while(--num > 0 && last != null) {
+            last = last.next
+        }
+
+        if(last != null) {
+            var nextHead = last.next
+            val stackList = mutableListOf<ListNode?>()
+            while(first != last) {
+                stackList.add(first)
+                first = first!!.next
+            }
+
+            while(stackList.isNotEmpty()) {
+                last!!.next = stackList.removeAt(stackList.lastIndex)
+                last = last!!.next
+            }
+
+            last!!.next = reverseKGroup(nextHead, k)
+        }
+
+        return first
     }
 }
