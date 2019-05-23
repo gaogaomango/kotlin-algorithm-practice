@@ -1,5 +1,3 @@
-import java.lang.StringBuilder
-
 object NumbersExtensions {
     fun findMedianSortedArrays(nums1: IntArray, nums2: IntArray): Double {
         val sortedNums = nums1.plus(nums2).sorted()
@@ -256,5 +254,17 @@ object NumbersExtensions {
             }
         }
         return result.toList()
+    }
+
+    fun removeDuplicates(nums: IntArray): Int {
+        if(nums.isEmpty()) return 0
+        var i = 0
+        for(j in 1 until nums.size) {
+            if(nums[j] != nums[i]) {
+                i++
+                nums[i] = nums[j]
+            }
+        }
+        return i + 1
     }
 }

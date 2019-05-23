@@ -119,4 +119,10 @@ class NumbersExtensionsTest {
             }
         }
     }
+
+    @Test
+    fun removeDuplicates_OK() {
+        assertEquals(2, NumbersExtensions.removeDuplicates(intArrayOf(1, 1, 2)))
+        assertEquals(5, NumbersExtensions.removeDuplicates(intArrayOf(0,0,1,1,1,2,2,3,3,4)))
+    }
 }
