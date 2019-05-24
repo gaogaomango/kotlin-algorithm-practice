@@ -111,4 +111,11 @@ class StringExtensionsTest {
         }
 
     }
+
+    @Test
+    fun strStr_OK() {
+        assertEquals(2, StringExtensions.strStr("hello", "ll"))
+        assertEquals(-1, StringExtensions.strStr("aaaaa", "bba"))
+    }
+
 }

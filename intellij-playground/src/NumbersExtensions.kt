@@ -267,4 +267,26 @@ object NumbersExtensions {
         }
         return i + 1
     }
+
+    fun removeElement(nums: IntArray, `val`: Int): Int {
+        if(nums.isEmpty()) return 0
+        if(nums.size == 1 && nums[0] == `val`) return 0
+
+        nums.sort()
+        var fast = 0
+        var last = nums.lastIndex
+
+        while(fast <= last) {
+            while(fast < last && nums[last] == `val`) {
+                last--
+            }
+            if(nums[fast] == `val`) {
+                nums[fast] = nums[last]
+                last--
+            }
+            fast++
+        }
+
+        return last + 1
+    }
 }

@@ -261,4 +261,30 @@ object StringExtensions {
         return result.distinct()
     }
 
+    /**
+     *
+     */
+    fun strStr(haystack: String, needle: String): Int {
+        if(needle.isEmpty()) return 0
+        val needleLen = needle.length
+        val haystackLen = haystack.length
+        if(needleLen > haystackLen) return -1
+        var index = 0
+        var i = 0
+        var found = -1
+        while(i < haystackLen && index < needleLen) {
+            if(haystack[i] == needle[index]) {
+                if(found == -1) found = i
+                index++
+            } else {
+                if(found != -1) i = found
+                index = 0
+                found = -1
+            }
+            i++
+        }
+
+        return if(index == needleLen) return found else return -1
+    }
+
 }

@@ -125,4 +125,12 @@ class NumbersExtensionsTest {
         assertEquals(2, NumbersExtensions.removeDuplicates(intArrayOf(1, 1, 2)))
         assertEquals(5, NumbersExtensions.removeDuplicates(intArrayOf(0,0,1,1,1,2,2,3,3,4)))
     }
+
+    @Test
+    fun removeElement_OK() {
+        assertEquals(2, NumbersExtensions.removeElement(intArrayOf(3, 2, 2, 3), 3))
+        assertEquals(5, NumbersExtensions.removeElement(intArrayOf(0,1,2,2,3,0,4,2), 2))
+        assertEquals(0, NumbersExtensions.removeElement(intArrayOf(1), 1))
+        assertEquals(1, NumbersExtensions.removeElement(intArrayOf(4, 5), 4))
+    }
 }
