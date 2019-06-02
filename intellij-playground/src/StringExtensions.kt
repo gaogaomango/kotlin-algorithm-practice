@@ -287,4 +287,30 @@ object StringExtensions {
         return if(index == needleLen) return found else return -1
     }
 
+    fun findSubstring(s: String, words: Array<String>): List<Int> {
+        if(s == null || words == null) return listOf()
+        if(s.isEmpty() || words.isEmpty()) return listOf()
+
+        val wordLength = words.first().length
+        val wordsSize = words.size
+        val resultList = mutableListOf<Int>()
+
+        for(i in s.indices) {
+            var tmpWords = words.asList().toMutableList()
+            checkWords@ for(j in 0 until wordsSize) {
+                if(s.length < (i + (j + 1) * wordLength)) {
+                    break@checkWords
+                }
+                if(!tmpWords.remove(s.substring((i + j * wordLength) until (i + (j + 1) * wordLength)))) {
+                    break@checkWords
+                }
+
+                if(j == wordsSize - 1) {
+                    resultList.add(i)
+                }
+            }
+        }
+
+        return resultList
+    }
 }

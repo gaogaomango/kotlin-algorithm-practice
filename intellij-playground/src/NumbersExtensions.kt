@@ -289,4 +289,51 @@ object NumbersExtensions {
 
         return last + 1
     }
+
+    fun divide(dividend: Int, divisor: Int): Int {
+        val arr = mutableListOf<Long>()
+        var remain = Math.abs(dividend.toLong())
+        var value = Math.abs(divisor.toLong())
+
+        while (value <= remain) {
+            arr.add(value)
+            value = value shl 1
+        }
+
+        var res = 0.toLong()
+        var e = arr.size
+
+        while (e > 0 && remain != 0.toLong()) {
+            val (index, _) = binarySearch(remain, arr.toTypedArray(), 0, e)
+            if (index >= 0) {
+                res += 1.toLong() shl index
+                remain -= arr[index]
+            }
+            e = index
+        }
+        if (dividend or divisor < 0 && dividend and divisor >= 0) {
+            res = -res
+        }
+        return Math.min(Math.max(res, Integer.MIN_VALUE.toLong()), Integer.MAX_VALUE.toLong()).toInt()
+    }
+
+    private fun <T: Comparable<T>> binarySearch(pivot: T, arr: Array<T>, start: Int = 0, end: Int = arr.size): Pair<Int, Int> {
+        var s = start
+        var e = end
+
+        while (s + 1 < e) {
+            val mid = ((e - s) shr 1) + s
+            if (pivot < arr[mid]) {
+                e = mid
+            } else if (pivot > arr[mid]) {
+                s = mid
+            } else {
+                return mid to 0
+            }
+        }
+        if (arr[s] > pivot) {
+            s = -1
+        }
+        return s to -1
+    }
 }

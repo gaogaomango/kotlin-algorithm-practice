@@ -118,4 +118,41 @@ class StringExtensionsTest {
         assertEquals(-1, StringExtensions.strStr("aaaaa", "bba"))
     }
 
+    @Test
+    fun findSubstring_OK() {
+//        val result = StringExtensions.findSubstring("barfoothefoobarman", arrayOf("foo","bar"))
+//        val expectation = listOf(0, 9)
+//        checkIsSameList(result, expectation)
+//
+//        val result2 = StringExtensions.findSubstring("wordgoodgoodgoodbestword", arrayOf("word","good","best","word"))
+//        val expectation2 = listOf<Int>()
+//        checkIsSameList(result2, expectation2)
+
+        val result3 = StringExtensions.findSubstring("wordgoodgoodgoodbestword", arrayOf("word","good","best","good"))
+        val expectation3 = listOf(8)
+        checkIsSameList(result3, expectation3)
+
+    }
+
+    private  fun checkIsSameList(result: List<Int>, expectation: List<Int>) {
+        if(result.size != expectation.size) {
+            print("result: ")
+            result.forEach {
+                print(" $it")
+            }
+            println()
+            print("expectation: ")
+            expectation.forEach {
+                print(" $it")
+            }
+
+            fail("list size is not same. ")
+        }
+        for((index, value) in result.withIndex()) {
+            if(value != expectation[index]) {
+                fail("element is not expected")
+            }
+        }
+    }
+
 }

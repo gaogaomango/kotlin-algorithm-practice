@@ -133,4 +133,10 @@ class NumbersExtensionsTest {
         assertEquals(0, NumbersExtensions.removeElement(intArrayOf(1), 1))
         assertEquals(1, NumbersExtensions.removeElement(intArrayOf(4, 5), 4))
     }
+
+    @Test
+    fun divide_OK() {
+        assertEquals(3, NumbersExtensions.divide(10, 3))
+        assertEquals(-2, NumbersExtensions.divide(7, -3))
+    }
 }
