@@ -120,13 +120,13 @@ class StringExtensionsTest {
 
     @Test
     fun findSubstring_OK() {
-//        val result = StringExtensions.findSubstring("barfoothefoobarman", arrayOf("foo","bar"))
-//        val expectation = listOf(0, 9)
-//        checkIsSameList(result, expectation)
-//
-//        val result2 = StringExtensions.findSubstring("wordgoodgoodgoodbestword", arrayOf("word","good","best","word"))
-//        val expectation2 = listOf<Int>()
-//        checkIsSameList(result2, expectation2)
+        val result = StringExtensions.findSubstring("barfoothefoobarman", arrayOf("foo","bar"))
+        val expectation = listOf(0, 9)
+        checkIsSameList(result, expectation)
+
+        val result2 = StringExtensions.findSubstring("wordgoodgoodgoodbestword", arrayOf("word","good","best","word"))
+        val expectation2 = listOf<Int>()
+        checkIsSameList(result2, expectation2)
 
         val result3 = StringExtensions.findSubstring("wordgoodgoodgoodbestword", arrayOf("word","good","best","good"))
         val expectation3 = listOf(8)

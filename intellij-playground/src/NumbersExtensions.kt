@@ -336,4 +336,47 @@ object NumbersExtensions {
         }
         return s to -1
     }
+
+    fun nextPermutation(nums: IntArray) {
+        var i = nums.size - 2
+        while(i >= 0) {
+            if(nums[i] < nums[i + 1])
+                break
+            i--
+        }
+
+        if(i == -1) {
+            nums.reverse()
+            return
+        }
+        var index = nums.reverseBinarySearchFirstGreater(nums[i], i + 1)
+        nums[i] = nums[index].also { nums[index] = nums[i] }
+        nums.reverse(i + 1)
+    }
+
+    private inline fun IntArray.reverseBinarySearchFirstGreater(element: Int, fromIndex: Int = 0, toIndex: Int = size): Int {
+        var low = toIndex - 1
+        var high = fromIndex
+
+        while(low > high) {
+            val mid = (low + high + 1) shr  1
+            val midVal = this[mid]
+
+            if(midVal <= element)
+                low = mid - 1
+            else
+                high = mid
+        }
+        return low
+    }
+
+    private inline fun IntArray.reverse(fromIndex: Int = 0, toIndex: Int = size) {
+        val lastIndex = toIndex - 1
+        val midTimes2 = fromIndex + lastIndex
+        val mid = (midTimes2 + 1) shr 1
+        for (i in fromIndex until mid) {
+            val j = midTimes2 - i
+            this[i] = this[j].also { this[j] = this[i] }
+        }
+    }
 }

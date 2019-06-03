@@ -139,4 +139,24 @@ class NumbersExtensionsTest {
         assertEquals(3, NumbersExtensions.divide(10, 3))
         assertEquals(-2, NumbersExtensions.divide(7, -3))
     }
+
+    @Test
+    fun nextPermutation_OK() {
+        val result =  intArrayOf(1, 2, 3)
+        NumbersExtensions.nextPermutation(result)
+        val expectation = intArrayOf(1, 3, 2)
+
+        checkIsSameIntArray(result, expectation)
+
+    }
+
+    private fun checkIsSameIntArray(result: IntArray, expectation: IntArray) {
+        if(result.size != expectation.size) {
+            fail("result is not same size as expectation")
+        }
+
+        for((index, value) in result.withIndex()) {
+            if(expectation[index] != value) fail("value is not same")
+        }
+    }
 }

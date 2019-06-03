@@ -1,7 +1,4 @@
-import java.lang.StringBuilder
 import java.math.BigInteger
-import java.util.*
-import kotlin.collections.ArrayList
 
 object StringExtensions {
     fun lengthOfLongestSubstring(s: String): Int {
@@ -294,9 +291,46 @@ object StringExtensions {
         val wordLength = words.first().length
         val wordsSize = words.size
         val resultList = mutableListOf<Int>()
+//        val tmpWordsMap = mutableMapOf<String, Int>()
+//        words.forEach {
+//            tmpWordsMap[it] = tmpWordsMap.getOrDefault(it, 0) + 1
+//        }
+//        var removeMap = HashMap(tmpWordsMap)
+//
+//        for(i in s.indices) {
+//            var total = words.size
+//            checkWords@ for(j in 0 until wordsSize) {
+//                if(s.length < (i + (j + 1) * wordLength)) {
+//                    removeMap = HashMap(tmpWordsMap)
+//                    break@checkWords
+//                }
+//                val key = s.substring((i + j * wordLength) until (i + (j + 1) * wordLength))
+//                val count = removeMap.getOrElse(key) {
+//                    null
+//                }
+//                if(count == null) {
+//                    removeMap = HashMap(tmpWordsMap)
+//                    break@checkWords
+//                }
+//                if(count > 0) {
+//                    removeMap[key] = count - 1
+//                } else {
+//                    removeMap = HashMap(tmpWordsMap)
+//                    break@checkWords
+//                }
+//                total = total -1
+//                if(total == 0) {
+//                    resultList.add(i)
+//                }
+////                if(j == wordsSize - 1) {
+////                    resultList.add(i)
+////                }
+////            }
+//            }
+//        }
 
         for(i in s.indices) {
-            var tmpWords = words.asList().toMutableList()
+            val tmpWords = words.toList().toMutableList()
             checkWords@ for(j in 0 until wordsSize) {
                 if(s.length < (i + (j + 1) * wordLength)) {
                     break@checkWords
@@ -313,4 +347,5 @@ object StringExtensions {
 
         return resultList
     }
+
 }
