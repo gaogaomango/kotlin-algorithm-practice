@@ -134,7 +134,7 @@ class StringExtensionsTest {
 
     }
 
-    private  fun checkIsSameList(result: List<Int>, expectation: List<Int>) {
+    private fun checkIsSameList(result: List<Int>, expectation: List<Int>) {
         if(result.size != expectation.size) {
             print("result: ")
             result.forEach {
@@ -153,6 +153,14 @@ class StringExtensionsTest {
                 fail("element is not expected")
             }
         }
+    }
+
+    @Test
+    fun longestValidParentheses_OK() {
+        assertEquals(2, StringExtensions.longestValidParentheses("(()"))
+        assertEquals(4, StringExtensions.longestValidParentheses(")()())"))
+        assertEquals(22, StringExtensions.longestValidParentheses(")(((((()())()()))()(()))("))
+        assertEquals(2, StringExtensions.longestValidParentheses("))))((()(("))
     }
 
 }

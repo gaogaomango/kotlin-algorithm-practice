@@ -348,4 +348,37 @@ object StringExtensions {
         return resultList
     }
 
+    fun longestValidParentheses(s: String): Int {
+        val stack = mutableListOf<Char>()
+        var result = 0
+        for(index in s.indices) {
+            if(s[index] == ')') continue
+            stack.add(s[index])
+            var j = index + 1
+            checkLoop@while(j < s.length) {
+                when(s[j]) {
+                    ')' -> {
+                        if(stack.isEmpty()) break@checkLoop
+                        if(stack.last() == '(') {
+                            stack.removeAt(stack.lastIndex)
+                        } else {
+                            stack.add(s[j])
+                        }
+                    }
+                    '(' -> {
+                        if(j != s.length -1) stack.add(s[j]) else break@checkLoop
+                    }
+                    else -> break@checkLoop
+                }
+                j++
+                if(stack.isEmpty() && j <= s.length && result < (j - index)) {
+                    result = (j - index)
+                }
+            }
+            stack.clear()
+        }
+
+        return result
+    }
+
 }
