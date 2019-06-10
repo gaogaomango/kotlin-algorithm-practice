@@ -163,4 +163,12 @@ class StringExtensionsTest {
         assertEquals(2, StringExtensions.longestValidParentheses("))))((()(("))
     }
 
+    @Test
+    fun longestValidParentheses2_OK() {
+        assertEquals(2, StringExtensions.longestValidParentheses2("(()"))
+        assertEquals(4, StringExtensions.longestValidParentheses2(")()())"))
+        assertEquals(22, StringExtensions.longestValidParentheses2(")(((((()())()()))()(()))("))
+        assertEquals(2, StringExtensions.longestValidParentheses2("))))((()(("))
+    }
+
 }

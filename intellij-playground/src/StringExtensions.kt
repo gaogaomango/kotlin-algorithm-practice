@@ -1,4 +1,5 @@
 import java.math.BigInteger
+import java.util.*
 
 object StringExtensions {
     fun lengthOfLongestSubstring(s: String): Int {
@@ -376,6 +377,40 @@ object StringExtensions {
                 }
             }
             stack.clear()
+        }
+
+        return result
+    }
+
+    fun longestValidParentheses2(s: String): Int {
+        val stack = mutableListOf<Int>()
+        var result = 0
+        for(index in s.indices) {
+            when (s[index]) {
+                '(' -> {
+                    stack.add(index)
+                }
+                else -> {
+                    if (stack.isEmpty() || s[stack.last()] == ')') {
+                        stack.add(index)
+                    } else {
+                        stack.removeAt(stack.lastIndex)
+                    }
+                }
+            }
+        }
+        if(stack.isEmpty()) {
+            result = s.length
+        } else {
+            var lowPosition = 0
+            var highPosition = s.length
+
+            while(stack.isNotEmpty()) {
+                lowPosition = stack.removeAt(stack.lastIndex)
+                result = Math.max(result, highPosition - lowPosition -1)
+                highPosition = lowPosition
+            }
+            result = Math.max(result, highPosition)
         }
 
         return result
