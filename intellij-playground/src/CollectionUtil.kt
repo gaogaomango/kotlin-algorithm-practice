@@ -221,4 +221,51 @@ object CollectionUtil {
         }
         return low
     }
+
+    fun search2(nums: IntArray, target: Int): Int {
+        val pivot = pivotSearch(nums, 0, nums.size - 1)
+        val leftResult = binarySearch(nums.sliceArray(0..pivot), target)
+        if (leftResult != -1) {
+            return leftResult
+        }
+        val rightResult = binarySearch(nums.sliceArray(pivot + 1 until nums.size), target)
+        if (rightResult != -1) {
+            return rightResult + pivot + 1
+        }
+        return -1
+    }
+
+    private fun binarySearch(nums: IntArray, target: Int): Int {
+        var low = 0
+        var high = nums.size - 1
+        while (low <= high) {
+            val middle = (low + high) / 2
+            when {
+                nums[middle] == target -> return middle
+                nums[middle] < target -> low = middle + 1
+                nums[middle] > target -> high = middle - 1
+            }
+        }
+        return -1
+    }
+
+    private fun pivotSearch(nums: IntArray, low: Int, high: Int): Int {
+        if (high < low) {
+            return -1
+        }
+        if (high == low) {
+            return low
+        }
+
+        val mid = low + (high - low) / 2
+        if (mid < high && nums[mid] > nums[mid + 1])
+            return mid
+        if (mid > low && nums[mid] < nums[mid - 1])
+            return mid - 1
+        return if (nums[low] >= nums[mid]) {
+            pivotSearch(nums, low, mid - 1)
+        } else {
+            pivotSearch(nums, mid + 1, high)
+        }
+    }
 }

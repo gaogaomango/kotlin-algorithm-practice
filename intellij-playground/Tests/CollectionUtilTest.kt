@@ -279,4 +279,12 @@ class CollectionUtilTest {
         assertEquals(-1, CollectionUtil.search(intArrayOf(4,5,6,7,0,1,2), 3))
         assertEquals(-1, CollectionUtil.search(intArrayOf(1,3), 2))
     }
+
+    @Test
+    fun search2_OK() {
+        assertEquals(4, CollectionUtil.search2(intArrayOf(4,5,6,7,0,1,2), 0))
+        assertEquals(-1, CollectionUtil.search2(intArrayOf(4,5,6,7,0,1,2), 3))
+        assertEquals(-1, CollectionUtil.search2(intArrayOf(1,3), 2))
+    }
+
 }

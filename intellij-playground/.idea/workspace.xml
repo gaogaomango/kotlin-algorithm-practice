@@ -79,8 +79,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/CollectionUtil.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="450">
-                  <caret line="222" column="5" lean-forward="true" selection-start-line="222" selection-start-column="5" selection-end-line="222" selection-end-column="5" />
+                <state relative-caret-position="80">
+                  <caret line="226" column="37" selection-start-line="226" selection-start-column="25" selection-end-line="226" selection-end-column="37" />
                 </state>
               </provider>
             </entry>
@@ -150,8 +150,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Tests/CollectionUtilTest.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="396">
-                  <caret line="278" column="77" lean-forward="true" selection-start-line="278" selection-start-column="77" selection-end-line="278" selection-end-column="77" />
+                <state relative-caret-position="356">
+                  <caret line="284" selection-start-line="284" selection-end-line="284" />
                 </state>
               </provider>
             </entry>
@@ -220,8 +220,8 @@
         <option value="$PROJECT_DIR$/src/NumbersExtensions.kt" />
         <option value="$PROJECT_DIR$/Tests/StringExtensionsTest.kt" />
         <option value="$PROJECT_DIR$/src/StringExtensions.kt" />
-        <option value="$PROJECT_DIR$/Tests/CollectionUtilTest.kt" />
         <option value="$PROJECT_DIR$/src/CollectionUtil.kt" />
+        <option value="$PROJECT_DIR$/Tests/CollectionUtilTest.kt" />
       </list>
     </option>
   </component>
@@ -305,7 +305,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CollectionUtilTest.search_OK">
+  <component name="RunManager" selected="JUnit.CollectionUtilTest.search2_OK">
+    <configuration name="CollectionUtilTest.search2_OK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="intellij-playground" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CollectionUtilTest" />
+      <option name="METHOD_NAME" value="search2_OK" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CollectionUtilTest.search_OK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="intellij-playground" />
       <option name="PACKAGE_NAME" value="" />
@@ -321,16 +331,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="NumbersExtensionsTest" />
       <option name="METHOD_NAME" value="nextPermutation_OK" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StringExtensionsTest.findSubstring_OK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="intellij-playground" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StringExtensionsTest" />
-      <option name="METHOD_NAME" value="findSubstring_OK" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -358,11 +358,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CollectionUtilTest.search2_OK" />
         <item itemvalue="JUnit.CollectionUtilTest.search_OK" />
         <item itemvalue="JUnit.StringExtensionsTest.longestValidParentheses2_OK" />
         <item itemvalue="JUnit.StringExtensionsTest.longestValidParentheses_OK" />
         <item itemvalue="JUnit.NumbersExtensionsTest.nextPermutation_OK" />
-        <item itemvalue="JUnit.StringExtensionsTest.findSubstring_OK" />
       </list>
     </recent_temporary>
   </component>
@@ -395,9 +395,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StringExtensionsTest_longestValidParentheses_OK - 2019.06.10 at 21h 31m 57s.xml">
-      <configuration name="StringExtensionsTest.longestValidParentheses_OK" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="StringExtensionsTest_longestValidParentheses_OK - 2019.06.10 at 21h 41m 14s.xml">
       <configuration name="StringExtensionsTest.longestValidParentheses_OK" configurationId="JUnit" />
     </history-entry>
@@ -424,6 +421,9 @@
     </history-entry>
     <history-entry file="CollectionUtilTest_search_OK - 2019.06.18 at 22h 45m 20s.xml">
       <configuration name="CollectionUtilTest.search_OK" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CollectionUtilTest_search2_OK - 2019.06.18 at 22h 50m 23s.xml">
+      <configuration name="CollectionUtilTest.search2_OK" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -1000,15 +1000,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/CollectionUtilTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="278" column="77" lean-forward="true" selection-start-line="278" selection-start-column="77" selection-end-line="278" selection-end-column="77" />
+        <state relative-caret-position="356">
+          <caret line="284" selection-start-line="284" selection-end-line="284" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CollectionUtil.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="222" column="5" lean-forward="true" selection-start-line="222" selection-start-column="5" selection-end-line="222" selection-end-column="5" />
+        <state relative-caret-position="80">
+          <caret line="226" column="37" selection-start-line="226" selection-start-column="25" selection-end-line="226" selection-end-column="37" />
         </state>
       </provider>
     </entry>
