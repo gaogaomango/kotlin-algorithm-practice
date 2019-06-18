@@ -195,4 +195,30 @@ object CollectionUtil {
 
         return first
     }
+
+    fun search(nums: IntArray, target: Int): Int {
+        if(nums.isEmpty()) return -1
+        val minIndex = findMinIndex(nums)
+        if(target == nums[minIndex]) return minIndex
+        var low = if(target >= nums[0]) 0 else minIndex
+        var high = if (target >= nums[nums.size - 1]) minIndex else nums.size - 1
+        while (low < high) {
+            val mid = (low + high) / 2
+            if(nums[mid] == target) return mid
+            else if (target > nums[mid]) low = mid - 1
+            else high = mid
+        }
+        return if(nums[low] == target) low else -1
+    }
+
+    private fun findMinIndex(nums: IntArray): Int {
+        var low = 0
+        var high = nums.size - 1
+
+        while(low < high) {
+            val mid = (low + high) / 2
+            if(nums[mid] > nums[high]) low = mid + 1 else high = mid
+        }
+        return low
+    }
 }

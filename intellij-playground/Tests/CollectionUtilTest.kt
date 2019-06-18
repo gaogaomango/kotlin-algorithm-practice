@@ -1,8 +1,8 @@
 import org.junit.After
+import org.junit.Assert.assertEquals
+import org.junit.Assert.fail
 import org.junit.Before
 import org.junit.Test
-
-import org.junit.Assert.*
 
 class CollectionUtilTest {
 
@@ -273,4 +273,10 @@ class CollectionUtilTest {
         }
     }
 
+    @Test
+    fun search_OK() {
+        assertEquals(4, CollectionUtil.search(intArrayOf(4,5,6,7,0,1,2), 0))
+        assertEquals(-1, CollectionUtil.search(intArrayOf(4,5,6,7,0,1,2), 3))
+        assertEquals(-1, CollectionUtil.search(intArrayOf(1,3), 2))
+    }
 }
