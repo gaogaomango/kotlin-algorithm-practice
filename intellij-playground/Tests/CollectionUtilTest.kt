@@ -287,4 +287,23 @@ class CollectionUtilTest {
         assertEquals(-1, CollectionUtil.search2(intArrayOf(1,3), 2))
     }
 
+    @Test
+    fun searchRange_OK() {
+        isSameArray(intArrayOf(3, 4), CollectionUtil.searchRange(intArrayOf(5,7,7,8,8,10), 8))
+        isSameArray(intArrayOf(-1, -1), CollectionUtil.searchRange(intArrayOf(5,7,7,8,8,10), 6))
+        isSameArray(intArrayOf(0, 0), CollectionUtil.searchRange(intArrayOf(1), 1))
+        isSameArray(intArrayOf(0, 1), CollectionUtil.searchRange(intArrayOf(2, 2), 2))
+    }
+
+    private fun isSameArray(expectationArray: IntArray, resultArray: IntArray) {
+        expectationArray.sort()
+        resultArray.sort()
+        if(expectationArray.size != resultArray.size) {
+            fail("expectation array doesn't have same size as result array")
+        }
+        for((index, value) in expectationArray.withIndex()) {
+            assertEquals(value, resultArray[index])
+        }
+    }
+
 }

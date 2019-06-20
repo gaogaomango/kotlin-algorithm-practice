@@ -268,4 +268,26 @@ object CollectionUtil {
             pivotSearch(nums, mid + 1, high)
         }
     }
+
+    fun searchRange(nums: IntArray, target: Int): IntArray {
+        if(nums == null || nums.isEmpty()) return return intArrayOf(-1, -1)
+        lateinit var result: IntArray
+
+        val index = binarySearch(nums, target)
+        if(index == -1) {
+            return intArrayOf(-1, -1)
+        } else {
+            var low = index
+            while (low > 0 && nums[low - 1] == nums[index]) {
+                low--
+            }
+            var high = index
+            while (high < nums.size - 1 && nums[high + 1] == nums[index]) {
+                high++
+            }
+            result = intArrayOf(low, high)
+        }
+
+        return result
+    }
 }
