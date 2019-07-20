@@ -350,4 +350,22 @@ object CollectionUtil {
 
         return true
     }
+
+    fun isValidSudoku2(board: Array<CharArray>): Boolean {
+        val seen = hashSetOf<String>()
+        for(i in board.indices) {
+            for(j in board[i].indices) {
+                val number = board[i][j]
+                if(number != '.') {
+                    if(!seen.add("$number in row $i") ||
+                        !seen.add("$number in column $i") ||
+                        !seen.add("$number in block ${i / 3}-${j-3}")) {
+                        return false
+                    }
+                }
+            }
+        }
+
+        return true
+    }
 }
