@@ -290,4 +290,64 @@ object CollectionUtil {
 
         return result
     }
+
+    fun searchInsert(nums: IntArray, target: Int): Int {
+        if(nums == null || nums.isEmpty()) return 0
+        var high = nums.size - 1
+        var low = 0
+
+        while(low <= high) {
+            val mid = (high + low) / 2
+            if(target == nums[mid]) {
+                return mid
+            } else if (target < nums[mid]) {
+                high = mid - 1
+            } else if (target > nums[mid]) {
+                low = mid + 1
+            }
+        }
+
+        return low
+    }
+
+    fun isValidSudoku(board: Array<CharArray>): Boolean {
+        val verticalCharMap = mutableListOf<MutableMap<Char, Int>>()
+        for(i in board.indices) {
+            verticalCharMap.add(mutableMapOf('1' to 0, '2' to 0, '3' to 0, '4' to 0, '5' to 0, '6' to 0, '7' to 0, '8' to 0, '9' to 0))
+        }
+
+        for(i in board.indices) {
+            val checkMap = mutableMapOf('1' to 0, '2' to 0, '3' to 0, '4' to 0, '5' to 0, '6' to 0, '7' to 0, '8' to 0, '9' to 0)
+
+            for(j in board[i].indices) {
+                val charValue = board[i][j]
+                if(charValue == '.') {
+                    continue
+                }
+                // horizontal check
+                when {
+                    checkMap.containsKey(charValue) -> {
+                        if(checkMap[charValue] != 0) {
+                            return false
+                        }
+                        checkMap[charValue] = 1
+                    }
+                    else -> return false
+                }
+
+                // vertical check
+                when {
+                    verticalCharMap[i].containsKey(charValue) -> {
+                        if(verticalCharMap[i][charValue] != 0) {
+                            return false
+                        }
+                        verticalCharMap[i][charValue] = 1
+                    }
+                    else -> return false
+                }
+            }
+        }
+
+        return true
+    }
 }
