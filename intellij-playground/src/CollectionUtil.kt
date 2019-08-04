@@ -1,5 +1,4 @@
 import java.util.*
-import kotlin.collections.ArrayList
 
 object CollectionUtil {
 
@@ -413,7 +412,7 @@ object CollectionUtil {
 
     fun insertionSort(items: MutableList<Int>): List<Int> {
         if(items.isEmpty() || items.size < 2)
-        if(items.size <= 1) return items.toList()
+            if(items.size <= 1) return items.toList()
 
         for(count in items.indices) {
             val item = items[count]
@@ -428,4 +427,40 @@ object CollectionUtil {
         return items
     }
 
+    fun heapSort(items: MutableList<Int>): List<Int> {
+        heapify(items)
+        var end = items.size - 1
+        while(end > 0) {
+            val temp = items[end]
+            items[end] = items[0]
+            items[0] = temp
+            end--
+            shiftDown(items, 0, end)
+        }
+
+        return items
+    }
+
+    fun heapify(items: MutableList<Int>) {
+        var start = items.size /2
+        while(start >= 0) {
+            shiftDown(items, start, items.size -1)
+            start--
+        }
+    }
+
+    fun shiftDown(items: MutableList<Int>, start: Int, end: Int) {
+        var root = start
+        while(root * 2 + 1 <= end) {
+            var child = root * 2 + 1
+            if(child + 1 <= end && items[child] < items[child + 1]) child++
+            if(items[root] < items[child]) {
+                val temp = items[root]
+                items[root] = items[child]
+                items[child] = temp
+                root = child
+            }
+            else return
+        }
+    }
 }

@@ -415,12 +415,27 @@ class CollectionUtilTest {
     fun insertSort_OK() {
         val mutableList = mutableListOf(2,5,6,32,8,35,12,8567,6789)
         println("mutableList: $mutableList")
-        val sortedList = mutableList.sorted()
-        println("sorted mutableList: $sortedList")
-        println("test: ${CollectionUtil.insertionSort(mutableList)}")
+        val expectSortedList = mutableList.sorted()
+        println("sorted mutableList: $expectSortedList")
+        val sortedList = CollectionUtil.insertionSort(mutableList)
+        println("test: $sortedList")
 
-        CollectionUtil.insertionSort(mutableList).forEachIndexed { index, i ->
-            assertEquals(i, sortedList[index])
+        sortedList.forEachIndexed { index, i ->
+            assertEquals(i, expectSortedList[index])
+        }
+    }
+
+    @Test
+    fun heapSort_OK() {
+        val mutableList = mutableListOf(10,2,5,6,32,8,35,12,8567,6789)
+        println("mutableList: $mutableList")
+        val expectSortedList = mutableList.sorted()
+        println("sorted mutableList: $expectSortedList")
+        val sortedList = CollectionUtil.heapSort(mutableList)
+        println("test: $sortedList")
+
+        sortedList.forEachIndexed { index, i ->
+            assertEquals(i, expectSortedList[index])
         }
     }
 
