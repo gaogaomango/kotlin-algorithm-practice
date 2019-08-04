@@ -273,12 +273,12 @@ class CollectionUtilTest {
         }
     }
 
-    @Test
-    fun search_OK() {
-        assertEquals(4, CollectionUtil.search(intArrayOf(4,5,6,7,0,1,2), 0))
-        assertEquals(-1, CollectionUtil.search(intArrayOf(4,5,6,7,0,1,2), 3))
-        assertEquals(-1, CollectionUtil.search(intArrayOf(1,3), 2))
-    }
+//    @Test
+//    fun search_OK() {
+//        assertEquals(4, CollectionUtil.search(intArrayOf(4,5,6,7,0,1,2), 0))
+//        assertEquals(-1, CollectionUtil.search(intArrayOf(4,5,6,7,0,1,2), 3))
+//        assertEquals(-1, CollectionUtil.search(intArrayOf(1,3), 2))
+//    }
 
     @Test
     fun search2_OK() {
@@ -410,4 +410,18 @@ class CollectionUtilTest {
         }
 
     }
+
+    @Test
+    fun insertSort_OK() {
+        val mutableList = mutableListOf(2,5,6,32,8,35,12,8567,6789)
+        println("mutableList: $mutableList")
+        val sortedList = mutableList.sorted()
+        println("sorted mutableList: $sortedList")
+        println("test: ${CollectionUtil.insertionSort(mutableList)}")
+
+        CollectionUtil.insertionSort(mutableList).forEachIndexed { index, i ->
+            assertEquals(i, sortedList[index])
+        }
+    }
+
 }

@@ -171,4 +171,27 @@ class StringExtensionsTest {
         assertEquals(2, StringExtensions.longestValidParentheses2("))))((()(("))
     }
 
+    @Test
+    fun splitTest_OK() {
+        val splitStr = "ab\nc\"d\"ef'g'-\r!`h`ijk\\lmn&op\tqr?st^u"
+        val expectation = "ab\\nc\"d\"ef\'g\'-\\r!`h`ijk\\lmn&opqr?st^u"
+
+        val result = splitStr.replace("\\n|\"|\\r|\\t".toRegex(), "\$0")
+        "\\n|\"|\\r|\\t".toRegex().findAll(splitStr).map {  }
+//        val result = splitStr.split("\"|\n|\r|\t".toRegex()).joinToString("\\$0")
+        println("result: $result")
+
+        val result2 = Regex.escapeReplacement(splitStr)
+        println("result2: $result2")
+
+        val result3 = "\\n|\"|\\r|\\t".toRegex().replace(splitStr) {m ->
+            "\\" + m.value
+        }
+
+        println("result3: ${result3.toString()}")
+
+        assertEquals(expectation, result)
+
+    }
+
 }

@@ -1,4 +1,5 @@
 import java.util.*
+import kotlin.collections.ArrayList
 
 object CollectionUtil {
 
@@ -409,4 +410,22 @@ object CollectionUtil {
         }
         return true
     }
+
+    fun insertionSort(items: MutableList<Int>): List<Int> {
+        if(items.isEmpty() || items.size < 2)
+        if(items.size <= 1) return items.toList()
+
+        for(count in items.indices) {
+            val item = items[count]
+            var i = count
+            while(i > 0 && item < items[i - 1]) {
+                items[i] = items[i - 1]
+                i--
+            }
+            items[i] = item
+        }
+
+        return items
+    }
+
 }
