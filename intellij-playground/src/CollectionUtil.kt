@@ -463,4 +463,47 @@ object CollectionUtil {
             else return
         }
     }
+
+    fun heapSort2(items: MutableList<Int>): List<Int> {
+        buildMaxHeap(items)
+
+        for(i in items.size - 1 downTo 1) {
+            val temp = items[0]
+            items[0] = items[i]
+            items[i] = temp
+            maxHeapify(items, 0, i -1)
+        }
+
+        println("sorted items: $items")
+
+        return items
+    }
+
+    private fun buildMaxHeap(items: MutableList<Int>) {
+        for(i in (items.size / 2) -1 downTo 0 ) {
+            maxHeapify(items, i)
+        }
+    }
+
+    private fun maxHeapify(items: MutableList<Int>, rootIndex: Int, heapSize: Int = items.size -1) {
+        val leftChildIndex = (2 * rootIndex) + 1
+        val rightChildIndex = (2 * rootIndex) + 2
+        var largestElementIndex = rootIndex
+
+        if(leftChildIndex <= heapSize && items[leftChildIndex] > items[rootIndex]) {
+            largestElementIndex = leftChildIndex
+        }
+
+        if(rightChildIndex <= heapSize && items[rightChildIndex] > items[largestElementIndex]) {
+            largestElementIndex = rightChildIndex
+        }
+
+        if(largestElementIndex != rootIndex) {
+            val temp = items[rootIndex]
+            items[rootIndex] = items[largestElementIndex]
+            items[largestElementIndex] = temp
+            maxHeapify(items, largestElementIndex, heapSize)
+        }
+    }
+
 }

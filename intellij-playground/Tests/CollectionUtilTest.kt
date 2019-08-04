@@ -439,4 +439,18 @@ class CollectionUtilTest {
         }
     }
 
+    @Test
+    fun heapSort2_OK() {
+        val mutableList = mutableListOf(10,2,5,6,32,8,35,12,8567,6789)
+        println("mutableList: $mutableList")
+        val expectSortedList = mutableList.sorted()
+        println("sorted mutableList: $expectSortedList")
+        val sortedList = CollectionUtil.heapSort2(mutableList)
+        println("test: $sortedList")
+
+        sortedList.forEachIndexed { index, i ->
+            assertEquals(i, expectSortedList[index])
+        }
+    }
+
 }

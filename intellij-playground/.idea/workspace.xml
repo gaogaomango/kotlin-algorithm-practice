@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/CollectionUtil.kt" line="469" mnemonic="9" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d048457c-d89b-4d7e-8ae5-5ca6cf0baf73" name="Default Changelist" comment="add fun about merge sort for node list">
       <change beforePath="$PROJECT_DIR$/Tests/CollectionUtilTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/CollectionUtilTest.kt" afterDir="false" />
@@ -16,14 +19,14 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.52204585">
+    <splitter split-orientation="horizontal" split-proportion="0.5761317">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/CollectionUtil.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="509">
-                  <caret line="465" selection-start-line="465" selection-end-line="465" />
+                <state relative-caret-position="258">
+                  <caret line="489" column="43" selection-start-line="489" selection-start-column="43" selection-end-line="489" selection-end-column="43" />
                 </state>
               </provider>
             </entry>
@@ -111,8 +114,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Tests/CollectionUtilTest.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="465">
-                  <caret line="429" column="43" selection-start-line="429" selection-start-column="43" selection-end-line="429" selection-end-column="43" />
+                <state relative-caret-position="553">
+                  <caret line="447" column="38" lean-forward="true" selection-start-line="447" selection-start-column="38" selection-end-line="447" selection-end-column="38" />
                 </state>
               </provider>
             </entry>
@@ -274,12 +277,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CollectionUtilTest.heapSort_OK">
+  <component name="RunManager" selected="JUnit.CollectionUtilTest.heapSort2_OK">
     <configuration name="CollectionUtilTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="intellij-playground" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CollectionUtilTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CollectionUtilTest.heapSort2_OK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="intellij-playground" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CollectionUtilTest" />
+      <option name="METHOD_NAME" value="heapSort2_OK" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -304,16 +317,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CollectionUtilTest.solveSudoku_OK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="intellij-playground" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CollectionUtilTest" />
-      <option name="METHOD_NAME" value="solveSudoku_OK" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="StringExtensionsTest.splitTest_OK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="intellij-playground" />
       <option name="PACKAGE_NAME" value="" />
@@ -326,11 +329,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CollectionUtilTest.heapSort2_OK" />
         <item itemvalue="JUnit.CollectionUtilTest.heapSort_OK" />
         <item itemvalue="JUnit.CollectionUtilTest.insertSort_OK" />
         <item itemvalue="JUnit.CollectionUtilTest" />
         <item itemvalue="JUnit.StringExtensionsTest.splitTest_OK" />
-        <item itemvalue="JUnit.CollectionUtilTest.solveSudoku_OK" />
       </list>
     </recent_temporary>
   </component>
@@ -363,21 +366,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CollectionUtilTest_insertSort_OK - 2019.08.04 at 12h 34m 34s.xml">
-      <configuration name="CollectionUtilTest.insertSort_OK" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CollectionUtilTest_insertSort_OK - 2019.08.04 at 12h 35m 01s.xml">
-      <configuration name="CollectionUtilTest.insertSort_OK" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CollectionUtilTest - 2019.08.04 at 12h 36m 56s.xml">
-      <configuration name="CollectionUtilTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CollectionUtilTest_insertSort_OK - 2019.08.04 at 12h 37m 09s.xml">
-      <configuration name="CollectionUtilTest.insertSort_OK" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CollectionUtilTest_insertSort_OK - 2019.08.04 at 12h 46m 45s.xml">
-      <configuration name="CollectionUtilTest.insertSort_OK" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CollectionUtilTest_insertSort_OK - 2019.08.04 at 12h 48m 09s.xml">
       <configuration name="CollectionUtilTest.insertSort_OK" configurationId="JUnit" />
     </history-entry>
@@ -392,6 +380,21 @@
     </history-entry>
     <history-entry file="CollectionUtilTest_heapSort_OK - 2019.08.04 at 14h 48m 18s.xml">
       <configuration name="CollectionUtilTest.heapSort_OK" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CollectionUtilTest_heapSort2_OK - 2019.08.04 at 15h 13m 21s.xml">
+      <configuration name="CollectionUtilTest.heapSort2_OK" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CollectionUtilTest_heapSort2_OK - 2019.08.04 at 15h 14m 21s.xml">
+      <configuration name="CollectionUtilTest.heapSort2_OK" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CollectionUtilTest_heapSort2_OK - 2019.08.04 at 15h 14m 57s.xml">
+      <configuration name="CollectionUtilTest.heapSort2_OK" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CollectionUtilTest_heapSort2_OK - 2019.08.04 at 15h 30m 53s.xml">
+      <configuration name="CollectionUtilTest.heapSort2_OK" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CollectionUtilTest_heapSort2_OK - 2019.08.04 at 15h 32m 03s.xml">
+      <configuration name="CollectionUtilTest.heapSort2_OK" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -417,7 +420,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2524377" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24377032" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3802817" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -997,15 +1000,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/CollectionUtilTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="429" column="43" selection-start-line="429" selection-start-column="43" selection-end-line="429" selection-end-column="43" />
+        <state relative-caret-position="553">
+          <caret line="447" column="38" lean-forward="true" selection-start-line="447" selection-start-column="38" selection-end-line="447" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CollectionUtil.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="465" selection-start-line="465" selection-end-line="465" />
+        <state relative-caret-position="258">
+          <caret line="489" column="43" selection-start-line="489" selection-start-column="43" selection-end-line="489" selection-end-column="43" />
         </state>
       </provider>
     </entry>
