@@ -379,4 +379,26 @@ object NumbersExtensions {
             this[i] = this[j].also { this[j] = this[i] }
         }
     }
+
+    fun countAndSay(n: Int): String {
+        var result = "1"
+        var sb: StringBuilder
+        for(i in 2..n) {
+            var index = 0
+            sb = StringBuilder()
+            while(index < result.length) {
+                val current = result[index]
+                var count = 1
+                while(index < result.length - 1 && result[index] == result[index + 1]) {
+                    count++
+                    index++
+                }
+                sb.append(count).append(current)
+                index++
+            }
+            result = sb.toString()
+        }
+
+        return result
+    }
 }

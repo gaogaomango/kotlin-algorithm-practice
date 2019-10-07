@@ -1,3 +1,4 @@
+import com.sun.xml.internal.ws.developer.UsesJAXBContext
 import org.junit.After
 import org.junit.Before
 import org.junit.Test
@@ -159,4 +160,14 @@ class NumbersExtensionsTest {
             if(expectation[index] != value) fail("value is not same")
         }
     }
+
+    @Test
+    fun countAndSay_OK() {
+        assertEquals("1", NumbersExtensions.countAndSay(1))
+        assertEquals("11", NumbersExtensions.countAndSay(2))
+        assertEquals("21", NumbersExtensions.countAndSay(3))
+        assertEquals("1211", NumbersExtensions.countAndSay(4))
+        assertEquals("111221", NumbersExtensions.countAndSay(5))
+    }
+
 }
