@@ -453,4 +453,9 @@ class CollectionUtilTest {
         }
     }
 
+    @Test
+    fun combinationSum_OK() {
+        assertEquals(listOf(listOf(2, 2, 3), listOf(7)), CollectionUtil.combinationSum(intArrayOf(2, 3, 6, 7), 7))
+        assertEquals(listOf(listOf(2, 2, 2, 2), listOf(2, 3, 3), listOf(3, 5)), CollectionUtil.combinationSum(intArrayOf(2, 3, 5), 8))
+    }
 }

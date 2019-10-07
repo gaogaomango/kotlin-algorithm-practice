@@ -506,4 +506,30 @@ object CollectionUtil {
         }
     }
 
+    fun combinationSum(candidates: IntArray, target: Int): List<List<Int>> {
+        val ans = MutableList(0){ MutableList(0){ 0 } }
+        comb(ans, candidates, target, 0, MutableList(0){0})
+
+        return ans
+    }
+
+    private fun comb(ans: MutableList<MutableList<Int>>, candidates: IntArray, target: Int, index: Int, tmp: MutableList<Int>): Unit {
+        if(target < 0) {
+            return
+        }
+
+        if(target == 0 ) {
+            if( !ans.contains(tmp)) {
+                ans.add(MutableList(tmp.size){i -> tmp[i]})
+            }
+            return
+        }
+
+        for(i in index until candidates.size) {
+            val newTmp = MutableList(tmp.size){tmp[it]}
+            newTmp.add(candidates[i])
+            comb(ans, candidates, target - candidates[i], i, newTmp)
+        }
+
+    }
 }

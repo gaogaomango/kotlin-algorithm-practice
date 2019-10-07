@@ -401,4 +401,5 @@ object NumbersExtensions {
 
         return result
     }
+
 }
