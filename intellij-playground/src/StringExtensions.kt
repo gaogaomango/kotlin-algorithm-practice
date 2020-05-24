@@ -416,4 +416,17 @@ object StringExtensions {
         return result
     }
 
+    fun maxSubArray(nums: IntArray): Int {
+        var cMaxInt = nums[0]
+        var maxInt = nums[0]
+        nums.mapIndexed { i, it ->
+            if(i > 0) {
+                cMaxInt = maxOf(it, cMaxInt + it)
+                maxInt = maxOf(cMaxInt, maxInt)
+            }
+        }
+        
+        return maxInt
+    }
+
 }
